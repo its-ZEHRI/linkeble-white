@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Linkeble</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- FONT AWESOME CDN -->
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script>
+    <!-- CSS LINK -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <!--------   NAVABR-START -------->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg text-dark navbar-dark">
+            <div class="container-fluid">
+                <a href="#">
+                    <img src="assets/images/Linkeble PNG logo.png" width="150px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0  d-flex align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark  ms-3" href="become-seller-on-linkeble.html">Become Seller</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark ms-3 " href="#" id="nav-sign-btn">Sign in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  ms-3 nav-join-btn" href="#" id="join-btn" style="">Join Now</a>
+                        </li>
+                        <!-- <div class="d-flex justify-content-betweeen align-items-center"> -->
+                        <div id="select_language" style="cursor: pointer;" class="mx-lg-5">
+                            <i class="fas fa-globe"></i>
+                            <span>English</span>
+                        </div>
+                        <div id="select_currency" style="cursor: pointer;">
+                            <i class="fas fa-dollar-sign"></i>
+                            <span>USD</span>
+                        </div>
+                        <!-- </div> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--------   NAVABR-END -------->
+    <div class="tags container-fluid my-2">
+        <div class=" container d-flex justify-content-between py-2">
+            <a href="some-services.html"> Data Science</a>
+            <a href="some-services.html"> Programming Services</a>
+            <a href="some-services.html"> Artificial Intelligence</a>
+            <a href="some-services.html"> Blockchain</a>
+            <a href="some-services.html"> ERP</a>
+            <a href="some-services.html"> Cloud Engineering</a>
+            <a href="some-services.html"> Meta Analysis</a>
+            <a href="some-services.html"> Vibration Analysis</a>
+            <a href="some-services.html"> SCANA developer</a>
+        </div>
+    </div>
+    <!--------   BECOME SELLER START -------->
+    <div class="become-seller-model  position-fixed text-dark d-none" id="become-seller-section">
+        <div class="position-relative p-4 " style="padding-bottom: 6.5rem!important;">
+            <span id="exit_become_seller_model" class="position-absolute px-2" style="top: 15px;right: 15px;cursor: pointer;"><i class="fas fa-times"></i></span>
+            <h2 class="text-center fw-bold" style="margin-top: 4rem!important;">Continue as!</h2>
+            <div class="my-5 pb-5">
+                <a href="user-login-home.html" class="w-100 btn become-seller-sub-btn">Buyer</a>
+                <a href="seller-dashboard.html" class="w-100 btn become-seller-sub-btn my-5">Seller</a>
+            </div>
+        </div>
+    </div>
+    <!--------   BECOME SELLER END -------->
+    <!-- -------------------------------------- -->
+    <!--------   LOGIN FORM START -------->
+    <div class="login-form-model position-fixed text-dark  d-none" id="login-form">
+        <div class="position-relative p-4">
+            <span id="exit_sign_in_model" class="position-absolute px-2" style="top: 15px;right: 15px;cursor: pointer;"><i class="fas fa-times"></i></span>
+            <h2 class="text-center mt-3">Welcome Back!</h2>
+            <p class="text-center mt-2" style="font-size: 14px">Sign in to our app to hire exactly what you need.</p>
+            <form method="POST" action="#" class="login-form">
+                <label for="email">Email</label>
+                <div class="position-relative mb-2">
+                    <img src="assets/icons/Icon zocial-email.png" class="position-absolute" style="top: 18px; left:25px" width="20px">
+                    <input type="email" name="email" class="login-input" placeholder="appuser2021@gmail.com">
+                </div>
+                <label for="password">Password</label>
+                <div class="position-relative mb-2">
+                    <img src="assets/icons/Icon material-lock.png" class="position-absolute" style="top: 14px; left:25px" width="13px">
+                    <img src="assets/icons/Icon ionic-ios-eye-off.png" class="position-absolute" style="top: 16px; right:25px" width="18px">
+                    <input type="password" name="password" class="login-input" placeholder="*********">
+                </div>
+                <div class="checkbox-forget-btn">
+                    <input type="checkbox" class="checkbox-round me-2"><span style="font-size: 13px;">Remember me</span>
+                    <a href="#" id="forgot-btn">Forgot Password?</a>
+                </div>
+                <input type="submit" name="" value="Sign in" class="submit-btn mt-2" id="form-sign-in-btn">
+                <div class="text-center mt-4 mb-3" style="font-size: 12px;">
+                    <span class="text-muted">Don't Have account?</span>
+                    <span class="ms-2" id="join-btn">Join Now</span>
+                </div>
+                <div class="text-center">
+                    <span class="orsignin position-relative" style="font-size: 17px">Or Sign in With</span>
+                </div>
+                <div class="social-links d-flex justify-content-between mt-5 mb-3">
+                    <div class="position-relative">
+                        <img src="assets/icons/Icon awesome-google.png" class="position-absolute" style="top: 2px; left: 15px" width="19px">
+                        <a href="#" class="google-btn">Google</a>
+                    </div>
+                    <div class="position-relative">
+                        <img src="assets/icons/Icon awesome-facebook-f.png" class="position-absolute" style="top: 0; left: 15px" width="13px">
+                        <a href="#" class="facebook-btn">Facebook</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--------   LOGIN FORM END -------->
+    <!-- --------------------------------- -->
+    <!--------   SIGNUP FORM START -------->
+    <div class="login-form-model position-fixed text-dark d-none" id="signup-form">
+        <div class="position-relative p-4">
+            <span id="exit_sign_up_model" class="position-absolute px-2" style="top: 15px;right: 15px;cursor: pointer;"><i class="fas fa-times"></i></span>
+            <h2 class="text-center mt-2">Welcome</h2>
+            <p class="mt-2" style="font-size: 14px">Sing Up to access all feature and Functionality</p>
+            <form method="POST" action="#" class="login-form">
+                <label for="email">Email</label>
+                <div class="position-relative mb-2">
+                    <img src="assets/icons/Icon zocial-email.png" class="position-absolute" style="top: 18px; left:25px" width="20px">
+                    <img src="assets/icons/Icon material-done.png" class="position-absolute" style="top: 17px; right:25px" width="18px">
+                    <input type="email" name="email" class="login-input" placeholder="appuser2021@gmail.com">
+                </div>
+                <label for="username">Username</label>
+                <div class="position-relative mb-2">
+                    <img src="assets/icons/Icon awesome-user-circle.png" class="position-absolute" style="top: 15px; left:25px" width="20px">
+                    <img src="assets/icons/Icon material-done.png" class="position-absolute" style="top: 17px; right:25px" width="18px">
+                    <input type="text" name="username" class="login-input" placeholder="FreelanceAppUser2021">
+                    <span class="text-muted" style="font-size: 12px;">Username will be Visible to everyone & You can't change it</span>
+                </div>
+                <label for="password">Password</label>
+                <div class="position-relative mb-2">
+                    <img src="assets/icons/Icon material-lock.png" class="position-absolute" style="top: 14px; left:25px" width="13px">
+                    <img src="assets/icons/Icon ionic-ios-eye-off.png" class="position-absolute" style="top: 16px; right:25px" width="18px">
+                    <input type="password" name="password" class="login-input" placeholder="*********">
+                    <span class="text-muted" style="font-size: 12px;">Enter Upper, Lowercase letters & Number for strong Password</span>
+                </div>
+                <div class="checkbox-forget-btn mt-3">
+                    <input type="checkbox" class="checkbox-round me-2">
+                    <span style="font-size: 13px;">By Joining, I agree with App's Terms and Conditions</span>
+                </div>
+                <input type="submit" name="" value="Sign Up" class="submit-btn mt-2" id="form-sign-up-btn">
+                <div class="text-center mt-4">
+                    <span class="text-muted" style="font-size: 12px;">Already have an account?</span>
+                    <span class="ms-2" id="signin-btn">Sign in Here</span>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--------   SIGNUP FORM END -------->
+    <!-- ------------------------------------------- -->
+    <!--------   FORGOT PASSWORD PAGE START -------->
+    <div class="login-form-model position-fixed text-dark d-none " id="forgot-form">
+        <div class="position-relative p-4">
+            <span id="exit_forgot_model" class="position-absolute px-2" style="top: 10px;right: 15px;cursor: pointer;"><i class="fas fa-times"></i></span>
+            <div class="px-4 position-relative">
+                <span id="back_forgot_model" class="position-absolute px-2" style="top: 0px;left: 15px;cursor: pointer;"><i class="fas fa-chevron-left"></i></span>
+                <h2 class="text-center mt-3" style="font-size: 17px">Forgot Password</h2>
+                <div class="text-center mx-auto mt-5" style="width: 80px">
+                    <img src="assets/icons/Icon material-lock-outline.png" width="100%">
+                </div>
+                <p class="text-center mt-2" style="color: #20AF4B; font-size: 21px;">Forgot Password</p>
+                <form method="POST" action="#" class="login-form">
+                    <label class="mt-4" for="email">Email</label>
+                    <div class="position-relative mb-3">
+                        <img src="assets/icons/Icon zocial-email.png" class="position-absolute" style="top: 18px; left:25px" width="20px">
+                        <input type="email" name="email" class="login-input" placeholder="user2021@linkeble.com">
+                    </div>
+                    <input type="submit" name="" value="Send Code" class="submit-btn mt-5" id="send-code-btn">
+                    <p class="text-center mt-2 mb-3 mx-4" style="font-size: 11px;">Enter your email that your provided in the Sign up, We will Security code to your that email.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--------   FORGOT PASSWORD PAGE END -------->
+    <!-- ----------------------------------------- -->
+    <!--------   GET OTP PASSWORD PAGE START -------->
+    <div class="login-form-model position-fixed text-dark d-none" id="get-otp-form">
+        <div class="position-relative p-4">
+            <span id="exit_get_otp_model" class="position-absolute px-2" style="top: 10px;right: 15px;cursor: pointer;"><i class="fas fa-times"></i></span>
+            <div class="px-4 position-relative">
+                <span id="back_get_otp_model" class="position-absolute px-2" style="top: 0px;left: 15px;cursor: pointer;"><i class="fas fa-chevron-left"></i></span>
+                <h2 class="text-center mt-3" style="font-size: 17px">change Password</h2>
+                <div class="text-center mx-auto mt-4" style="width: 70px">
+                    <img src="assets/icons/Icon material-lock-outline.png" width="100%">
+                </div>
+                <p class="text-center mt-2 fw-bold" style="color: #20AF4B; font-size: 21px;">Forgot Password</p>
+                <h6 class="mt-3 text-center fw-bold" style="font-size: 16px">Verification</h6>
+                <p class="text-center mt-2 mb-3 mx-4" style="font-size: 15px;">An EMAIL with a confirmation code has been sent to your email</p>
+                <form method="POST" action="#" class="login-form">
+                    <div class="digit-group d-flex justify-content-evenly align-items-center mt-3" data-group-name="digits">
+                        <input type="text" id="digit-1" name="digit-1" data-next="digit-2" style="color: #000!important;" />
+                        <input type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" style="color: #000!important;" />
+                        <input type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" style="color: #000!important;" />
+                        <input type="text" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3" style="color: #000!important;" />
+                        <i class="fas fa-times" id="reset_OTP_number" style="font-size: 20px; cursor: pointer;"></i>
+                    </div>
+                    <input type="submit" name="" value="Verify & Continue" class="submit-btn mt-5" style="padding: 7px 0; font-size: 15px" id="verify-and-continue-btn">
+                    <div class="fw-bold d-flex justify-content-between mt-2" style="font-size: 13px;">
+                        <a style="color: red; cursor: pointer;" id="back_get_otp_model">Resent code</a>
+                        <a style="color: #00966B; cursor: pointer;" id="back_get_otp_model">Change Email?</a>
+                    </div>
+                    <p class="text-center text-muted mt-2 mx-4" style="font-size: 11px;">Enter security code that we have sent to your email, make sure to check your spam, junk mail box folder</p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--------   GET OPT PASSWORD PAGE END -------->
+    <!-- ----------------------------------------- -->
+    <!--------   CHANGE PASSWORD PAGE START -------->
+    <div class="login-form-model position-fixed text-dark d-none" id="change-pwd-form">
+        <div class="position-relative p-4">
+            <span id="exit_change_pwd_model" class="position-absolute px-2" style="top: 10px;right: 15px;cursor: pointer;"><i class="fas fa-times"></i></span>
+            <div class="px-4">
+                <h2 class="text-center mt-3" style="font-size: 17px">change Password</h2>
+                <div class="text-center mx-auto mt-4" style="width: 70px">
+                    <img src="assets/icons/Icon material-lock-outline.png" width="100%">
+                </div>
+                <p class="text-center mt-2 fw-bold" style="color: #20AF4B; font-size: 21px;">Forgot Password</p>
+                <form method="POST" action="#" class="login-form">
+                    <label for="password">New Password</label>
+                    <div class="position-relative mb-2">
+                        <img src="assets/icons/Icon material-lock.png" class="position-absolute" style="top: 14px; left:25px" width="13px">
+                        <img src="assets/icons/Icon ionic-ios-eye-off.png" class="position-absolute" style="top: 16px; right:25px" width="18px">
+                        <input type="password" name="password" class="login-input" placeholder="*********">
+                    </div>
+                    <label for="password">Confirm Password</label>
+                    <div class="position-relative mb-3">
+                        <img src="assets/icons/Icon material-lock.png" class="position-absolute" style="top: 14px; left:25px" width="13px">
+                        <img src="assets/icons/Icon ionic-ios-eye-off.png" class="position-absolute" style="top: 16px; right:25px" width="18px">
+                        <input type="password" name="password" class="login-input" placeholder="*********">
+                    </div>
+                    <input type="submit" name="" value="Change Password" class="submit-btn mt-4" style="padding: 7px 0; font-size: 15px" id="change-pwd-btn">
+                    <p class="text-muted mt-2 me-4" style="font-size: 11px;">Make sure your Password must be at least 8 characters long contain a number and an uppercase letter</p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--------   CHANGE PASSWORD PAGE END -------->
+    <!-- ----------------------------------------- -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 pt-5">
+                <h1 class="fw-bold mb-3">Search in the ultimate freelance service providers</h1>
+                <h4 class="fw-lighter mb-4">Hire professional Freelancer World Wide</h4>
+                <form method="POST" action="search-result.html" class="position-relative header-form d-flex mb-4">
+                    <input type="text" name="" placeholder="Search for any service...">
+                    <i class="fas fa-search position-absolute top-50 translate-middle" style="left: 2rem;color: #fff"></i>
+                    <input type="submit" name="" class="btn" value="Get Started">
+                </form>
+                <div class="header-tags d-flex flex-wrap justify-content-between">
+                    <span>Top Services:</span>
+                    <a href="view-all-professional-services.html">Data Science</a>
+                    <a href="view-all-professional-services.html">Block Chain</a>
+                    <a href="view-all-professional-services.html">AI/ML</a>
+                    <a href="view-all-professional-services.html">Programming</a>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <img src="assets/images/SeekPng.com_girl-with-laptop-png_2585262@2x.png" width="80%">
+            </div>
+        </div>
+    </div>
+    <!-------------- FIRST SLIDER START ------------->
+    <div class="container pt-5">
+        <div class="my-4 d-flex justify-content-between">
+            <h3 class="">Recently Viewed Services</h3>
+            <a href="some-services.html" class="view-all-btn">View All</a>
+        </div>
+        <div class="slider">
+            <div class="slides">
+                <div class="slider-card">
+                    <a href="open-service.html">
+                        <div class="slider-card-body">
+                            <p>Develop Mobile Apps For Android & iOS</p>
+                            <div class="d-flex justify-content-between px-2">
+                                <div class="star-icons">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="ms-2 text-white">5 (11)</span>
+                                </div>
+                                <i class="far fa-heart heart-icon" style=""></i>
+                            </div>
+                            <h4 class="fw-lighter mt-4 ps-2">From $10</h4>
+                            <img src="assets/images/1Mask Group 13@2x.png" width="100%">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="slides">
+                <div class="slider-card">
+                    <a href="open-service.html">
+                        <div class="slider-card-body">
+                            <p>Mobile Application UI/UX XD or Figma Design</p>
+                            <div class="d-flex justify-content-between px-2">
+                                <div class="star-icons">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="ms-2 text-white">5 (28)</span>
+                                </div>
+                                <i class="far fa-heart heart-icon"></i>
+                            </div>
+                            <h4 class="fw-lighter mt-4 ps-2">From $10</h4>
+                            <img src="assets/images/2Mask Group 13@2x.png" width="100%">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="slides">
+                <div class="slider-card">
+                    <a href="open-service.html">
+                        <div class="slider-card-body">
+                            <p>Machine Learning Projects in Python</p>
+                            <div class="d-flex justify-content-between px-2">
+                                <div class="star-icons">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="ms-2 text-white">5 (19)</span>
+                                </div>
+                                <i class="far fa-heart heart-icon" style=""></i>
+                            </div>
+                            <h4 class="fw-lighter mt-4 ps-2">From $10</h4>
+                            <img src="assets/images/3Mask Group 13@2x.png" width="100%">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="slides">
+                <div class="slider-card">
+                    <a href="open-service.html">
+                        <div class="slider-card-body">
+                            <p>Design & develop Modern Website</p>
+                            <div class="d-flex justify-content-between px-2">
+                                <div class="star-icons">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="ms-2 text-white">5 (3)</span>
+                                </div>
+                                <i class="far fa-heart heart-icon" style=""></i>
+                            </div>
+                            <h4 class="fw-lighter mt-4 ps-2">From $10</h4>
+                            <img src="assets/images/4Mask Group 13@2x.png" width="100%">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="slides">
+                <div class="slider-card">
+                    <a href="open-service.html">
+                        <div class="slider-card-body">
+                            <p>Native iOS Development</p>
+                            <div class="d-flex justify-content-between px-2">
+                                <div class="star-icons">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="ms-2 text-white">4.9 (9)</span>
+                                </div>
+                                <i class="far fa-heart heart-icon" style=""></i>
+                            </div>
+                            <h4 class="fw-lighter mt-4 ps-2">From $10</h4>
+                            <img src="assets/images/5Mask Group 13@2x.png" width="100%">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="slides">
+                <div class="slider-card">
+                    <a href="open-service.html">
+                        <div class="slider-card-body">
+                            <p>Native iOS Development</p>
+                            <div class="d-flex justify-content-between px-2">
+                                <div class="star-icons">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="ms-2 text-white">4.9 (9)</span>
+                                </div>
+                                <i class="far fa-heart heart-icon" style=""></i>
+                            </div>
+                            <h4 class="fw-lighter mt-4 ps-2">From $10</h4>
+                            <img src="assets/images/5Mask Group 13@2x.png" width="100%">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------- FIRST SLIDER END ------------->
+    <!-------------- SECOND SLIDER START ------------->
+    <div class="container">
+        <div class=" d-flex justify-content-between">
+            <h3>Top rated Professional Services on Linkeble</h3>
+            <a href="view-all-professional-services.html" class="view-all-btn">View All</a>
+        </div>
+    </div>
+    <div class="container pt-4">
+        <div class="slider">
+            <div class="slides">
+                <a href="open-service.html">
+                    <div class="second-slider-card position-relative">
+                        <img src="assets/images/Mask Group 23@2x.png" width="100%">
+                        <p class="position-absolute ">Machine Learning</p>
+                    </div>
+                </a>
+            </div>
+            <div class="slides">
+                <a href="open-service.html">
+                    <div class="second-slider-card position-relative">
+                        <img src="assets/images/1Mask Group 23@2x.png" width="100%">
+                        <p class="position-absolute ">Programming Services</p>
+                    </div>
+                </a>
+            </div>
+            <div class="slides">
+                <a href="open-service.html">
+                    <div class="second-slider-card position-relative">
+                        <img src="assets/images/2Mask Group 23@2x.png" width="100%">
+                        <p class="position-absolute ">Artificial Intelligence</p>
+                    </div>
+                </a>
+            </div>
+            <div class="slides">
+                <a href="open-service.html">
+                    <div class="second-slider-card position-relative">
+                        <img src="assets/images/3Mask Group 23@2x.png" width="100%">
+                        <p class="position-absolute ">Block Chain</p>
+                    </div>
+                </a>
+            </div>
+            <div class="slides">
+                <a href="open-service.html">
+                    <div class="second-slider-card position-relative">
+                        <img src="assets/images/4Mask Group 23@2x.png" width="100%">
+                        <p class="position-absolute ">Database</p>
+                    </div>
+                </a>
+            </div>
+            <div class="slides">
+                <a href="open-service.html">
+                    <div class="second-slider-card position-relative">
+                        <img src="assets/images/4Mask Group 23@2x.png" width="100%">
+                        <p class="position-absolute ">Database</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-------------- SECOND SLIDER END ------------->
+    <!-------------- SERVICES START ---------------->
+    <div class="container">
+        <div class="d-flex justify-content-between">
+            <h3>Services You may also like</h3>
+            <a href="some-services.html" class="view-all-btn">View All</a>
+        </div>
+        <div class="services-card py-5">
+            <div class="slider-card">
+                <a href="open-service.html">
+                    <div class="slider-card-body">
+                        <p>expert mixing and mastering engineer</p>
+                        <div class="d-flex justify-content-between px-2">
+                            <div class="star-icons">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ms-2 text-white">5 (11)</span>
+                            </div>
+                            <i class="far fa-heart heart-icon"></i>
+                        </div>
+                        <h4 class="fw-lighter mt-4 ps-2">From $10</h4>
+                        <img src="assets/images/Mask Group 13@2x.png" width="100%">
+                    </div>
+                </a>
+            </div>
+            <div class="slider-card">
+                <a href="open-service.html">
+                    <div class="slider-card-body">
+                        <p>engaging article or blog post</p>
+                        <div class="d-flex justify-content-between px-2">
+                            <div class="star-icons">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ms-2 text-white">5 (18)</span>
+                            </div>
+                            <i class="far fa-heart heart-icon"></i>
+                        </div>
+                        <h4 class="fw-lighter mt-4 ps-2">From $10</h4>
+                        <img src="assets/images/6Mask Group 13@2x.png" width="100%">
+                    </div>
+                </a>
+            </div>
+            <div class="slider-card">
+                <a href="open-service.html">
+                    <div class="slider-card-body">
+                        <p>SEO and ranking your Sites/Channel</p>
+                        <div class="d-flex justify-content-between px-2">
+                            <div class="star-icons">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ms-2 text-white">5 (19)</span>
+                            </div>
+                            <i class="far fa-heart heart-icon"></i>
+                        </div>
+                        <h4 class="fw-lighter mt-4 ps-2">From $10</h4>
+                        <img src="assets/images/7Mask Group 13@2x.png" width="100%">
+                    </div>
+                </a>
+            </div>
+            <div class="slider-card">
+                <a href="open-service.html">
+                    <div class="slider-card-body">
+                        <p>create original business poster for digital marketing</p>
+                        <div class="d-flex justify-content-between px-2">
+                            <div class="star-icons">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ms-2 text-white">5 (3)</span>
+                            </div>
+                            <i class="far fa-heart heart-icon"></i>
+                        </div>
+                        <h4 class="fw-lighter mt-4 ps-2">From $10</h4>
+                        <img src="assets/images/8Mask Group 13@2x.png" width="100%">
+                    </div>
+                </a>
+            </div>
+            <div class="slider-card">
+                <a href="open-service.html">
+                    <div class="slider-card-body">
+                        <p>trumpet section to ensure your song is a hit</p>
+                        <div class="d-flex justify-content-between px-2">
+                            <div class="star-icons">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ms-2 text-white">4.9 (9)</span>
+                            </div>
+                            <i class="far fa-heart heart-icon"></i>
+                        </div>
+                        <h4 class="fw-lighter mt-4 ps-2">From $10</h4>
+                        <img src="assets/images/14Mask Group 13.png" width="100%">
+                    </div>
+                </a>
+            </div>
+            <div class="slider-card">
+                <a href="open-service.html">
+                    <div class="slider-card-body">
+                        <p>Programming in python</p>
+                        <div class="d-flex justify-content-between px-2">
+                            <div class="star-icons">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ms-2 text-white">5 (11)</span>
+                            </div>
+                            <i class="far fa-heart heart-icon"></i>
+                        </div>
+                        <h4 class="fw-lighter mt-4 ps-2">From $10</h4>
+                        <img src="assets/images/9Mask Group 13@2x.png" width="100%">
+                    </div>
+                </a>
+            </div>
+            <div class="slider-card">
+                <a href="open-service.html">
+                    <div class="slider-card-body">
+                        <p>Proofread and Editing website</p>
+                        <div class="d-flex justify-content-between px-2">
+                            <div class="star-icons">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ms-2 text-white">5 (28)</span>
+                            </div>
+                            <i class="far fa-heart heart-icon"></i>
+                        </div>
+                        <h4 class="fw-lighter mt-4 ps-2">From $10</h4>
+                        <img src="assets/images/10Mask Group 13@2x.png" width="100%">
+                    </div>
+                </a>
+            </div>
+            <div class="slider-card">
+                <a href="open-service.html">
+                    <div class="slider-card-body">
+                        <p>Pro Logo Designing</p>
+                        <div class="d-flex justify-content-between px-2">
+                            <div class="star-icons">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ms-2 text-white">5 (9)</span>
+                            </div>
+                            <i class="far fa-heart heart-icon"></i>
+                        </div>
+                        <h4 class="fw-lighter mt-4 ps-2">From $10</h4>
+                        <img src="assets/images/11Mask Group 13@2x.png" width="100%">
+                    </div>
+                </a>
+            </div>
+            <div class="slider-card">
+                <a href="open-service.html">
+                    <div class="slider-card-body">
+                        <p>Microcontroller Programming </p>
+                        <div class="d-flex justify-content-between px-2">
+                            <div class="star-icons">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ms-2 text-white">5 (3)</span>
+                            </div>
+                            <i class="far fa-heart heart-icon"></i>
+                        </div>
+                        <h4 class="fw-lighter mt-4 ps-2">From $10</h4>
+                        <img src="assets/images/12Mask Group 13@2x.png" width="100%">
+                    </div>
+                </a>
+            </div>
+            <div class="slider-card">
+                <a href="open-service.html">
+                    <div class="slider-card-body">
+                        <p>WordPress Bug Fixer and Developer</p>
+                        <div class="d-flex justify-content-between px-2">
+                            <div class="star-icons">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ms-2 text-white">4.9 (9)</span>
+                            </div>
+                            <i class="far fa-heart heart-icon"></i>
+                        </div>
+                        <h4 class="fw-lighter mt-4 ps-2">From $10</h4>
+                        <img src="assets/images/15Mask Group 13.png" width="100%">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--------------- SERVICES END ------------------>
+    <!--------- RECTANGLE SLIDER START --------------->
+    <div class="container rectangle-slider-card mb-5">
+        <a href="view-services.html">
+            <div class="rectangle-slider">
+                <div class="rectangle-slides p-4  d-flex">
+                    <div class="r-s-content">
+                        <h5>Develop App for your Business</h5>
+                        <p>Hire top talented Mobile App developer on Linkeble and develop Your own Custom App for your business and grow rapidly</p>
+                    </div>
+                    <div class="d-flex r-s-img justify-content-end">
+                        <img src="assets/images/Mask Group 71@2x.png" style="max-width: 200px">
+                    </div>
+                    <div class="rectangle-slider-indicator">
+                        <div class="indicator">
+                            <span></span>
+                            <span style="background-color: #04947A;"></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="rectangle-slides p-4 d-flex">
+                    <div class="r-s-content">
+                        <h5>Develop App for your Business</h5>
+                        <p>Hire top talented Mobile App developer on Linkeble and develop Your own Custom App for your business and grow rapidly</p>
+                    </div>
+                    <div class="d-flex r-s-img justify-content-end">
+                        <img src="assets/images/Mask Group 71@2x.png" width="200px">
+                    </div>
+                    <div class="rectangle-slider-indicator">
+                        <div class="indicator">
+                            <span></span>
+                            <span></span>
+                            <span style="background-color: #04947A;"></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="rectangle-slides p-4 d-flex">
+                    <div class="r-s-content">
+                        <h5>Develop App for your Business</h5>
+                        <p>Hire top talented Mobile App developer on Linkeble and develop Your own Custom App for your business and grow rapidly</p>
+                    </div>
+                    <div class="d-flex r-s-img justify-content-end">
+                        <img src="assets/images/Mask Group 71@2x.png" width="200px">
+                    </div>
+                    <div class="rectangle-slider-indicator">
+                        <div class="indicator">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span style="background-color: #04947A;"></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <!--------- RECTANGLE SLIDER END --------------->
+    <!-- l -->
+    <div class="container more-services-started mb-5">
+        <div class="row">
+            <div class="col-md-7">
+                <h1 class="ms-4 mt-4 fw-bold" style="font-size: 45px; color: #fff">The Ultimate services that fits your brand personality.</h1>
+                <a href="#" id="nav-sign-btn" class="btn ms-4 mt-4 get-started-btn" style="">Get Started</a>
+            </div>
+            <div class="col-md-5">
+                <img src="assets/images/pexels-harry-cooke-6533797 copy.png" width="100%">
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------------------------- -->
+    <!------------------ FOOTER START ------------------>
+    <div class="container-fluid footer pt-3">
+        <h2 class="text-center fw-bold mb-5">With one click hire the best Talents</h2>
+        <!-- CARD ROW -->
+        <div class="px-5">
+            <div class="row text-center footer-card mt-4">
+                <div class="col-md-3 ">
+                    <div class="card-icon d-flex align-items-center justify-content-center">
+                        <img src="assets/images/Group 9069@2x.png" width="40%">
+                    </div>
+                    <h3 class="my-4 fw-bold">Post a service</h3>
+                    <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis magna justo, scelerisque et euismod sit amet,<br>eleifend quis magna. Sed fringilla, est at volutpat sodales,</p>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="card-icon d-flex align-items-center justify-content-center">
+                        <img src="assets/images/work-on-laptop-work-job-effort-svgrepo-com@2x.png" width="35%">
+                    </div>
+                    <h3 class="my-4 fw-bold">Hire Best seller</h3>
+                    <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis magna justo, scelerisque et euismod sit amet,<br>eleifend quis magna. Sed fringilla, est at volutpat sodales,</p>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="card-icon d-flex align-items-center justify-content-center">
+                        <img src="assets/images/banking-secure-payment-svgrepo-com@2x.png" width="30%">
+                    </div>
+                    <h3 class="my-4 fw-bold">Pay securely</h3>
+                    <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis magna justo, scelerisque et euismod sit amet,<br>eleifend quis magna. Sed fringilla, est at volutpat sodales,</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="card-icon d-flex align-items-center justify-content-center">
+                        <img src="assets/images/delivery-svgrepo-com (4)@2x.png" width="30%">
+                    </div>
+                    <h3 class="my-4 fw-bold">Get delivery</h3>
+                    <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis magna justo, scelerisque et euismod sit amet,<br>eleifend quis magna. Sed fringilla, est at volutpat sodales,</p>
+                </div>
+            </div>
+        </div>
+        <!-- LINKS ROW -->
+        <div class="p-5">
+            <div class="row footer-links">
+                <div class="col-md-5 mb-4">
+                    <h4 class="fw-bold mb-3">Linkeble</h4>
+                    <a href="view-services.html">Categories</a>
+                    <a href="programming-service.html">Projects</a>
+                    <a href="service-request.html">Service request</a>
+                    <a href="view-all-professional-services.html">Top services</a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4 class="fw-bold mb-3">About</h4>
+                    <a href="about-us.html">About us</a>
+                    <a href="how-it-work.html">How it works?</a>
+                    <a href="privacy-policy.html">News</a>
+                    <a href="jobs.html">Jobs</a>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="fw-bold mb-3">Terms</h4>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="privacy-policy.html">Terms and Conditions</a>
+                    <a href="privacy-policy.html">Fees and Charges</a>
+                    <a href="privacy-policy.html">Copyright Policy</a>
+                </div>
+            </div>
+        </div>
+        <h4 class="text-center fw-bold">Get the Linkeble App now on:</h4>
+        <div class="text-center my-4">
+            <img src="assets/images/Group 9085.png" class="me-lg-5" width="150px">
+            <img src="assets/images/Group 9086.png" class="ms-lg-5" width="150px">
+        </div>
+        <div class="text-center w-50 mx-auto footer-social-icons">
+            <div class="d-flex justify-content-around">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-snapchat-ghost"></i></a>
+            </div>
+            <!-- bottom to top button -->
+            <!-- <div class=" text-center bottom-to-top" style="right: 4rem; bottom: 8rem;">
+                <a href="#">
+                    <img src="assets/icons/Icon ionic-ios-arrow-back.png" width="55%">
+                    <p style="margin-top: -7px!important">Top</p>
+                </a>
+            </div> -->
+        </div>
+        <div class="px-5 my-4">
+            <hr>
+        </div>
+        <!-- LAST ROW -->
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <img src="assets/images/Linkeble PNG logo.png" width="150px">
+            </div>
+            <div class="col-md-6 text-center mb-4">
+                <p>Linkeble ® is a registered Trademark of Linkeble Technology
+                    Copyright © 2021 Linkeble Technology </p>
+            </div>
+            <div class="col-md-3 d-flex justify-content-evenly align-items-center mb-4">
+                <div id="select_language" style="cursor: pointer;">
+                    <i class="fas fa-globe"></i>
+                    <span>English</span>
+                </div>
+                <div id="select_currency" style="cursor: pointer;">
+                    <i class="fas fa-dollar-sign"></i>
+                    <span>USD</span>
+                </div>
+            </div>
+        </div>
+        <!-- LANGUAGE POP UP -->
+        <div id="language_pop_up" class="position-fixed d-none" style="">
+            <div class="lang-pop-up-body" style="background-color: #000;color: #fff">
+                <div class="position-relative px-5 py-3">
+                    <h6 class="text-center my-3">Select Language</h6>
+                    <ul>
+                        <li>English<span>(English)</span><i class="fas fa-check"></i></li>
+                        <li>Lwo<span>(Acholi)</span></li>
+                        <li>Arfikaans<span>(Arfikaans)</span></li>
+                        <li>German <span>(Deutsch)</span></li>
+                        <li>French <span>(François)</span></li>
+                        <li>Spanish<span>(Español)</span></li>
+                        <li>Italian<span>(Italiano)</span></li>
+                        <li>Romanian<span>(Română)</span></li>
+                        <li>Portuguese<span>(Português)</span></li>
+                        <li>Swedish<span>(Svenska)</span></li>
+                        <li>Danish<span>(Dansk)</span></li>
+                        <li>Urdu<span>(اردو)</span></li>
+                    </ul>
+                    <button>Save</button>
+                    <i id="close_lang_popup" class="fas fa-times-circle position-absolute" style="top: 20px;right: 20px;color: gray; font-size: 22px;cursor: pointer;"></i>
+                </div>
+            </div>
+        </div>
+        <!-- CURRENCY POP UP -->
+        <div id="currency_pop_up" class="position-fixed d-none">
+            <div class="currency-pop-up-body" style="background-color: #000;color: #fff">
+                <div class="position-relative px-5 py-3">
+                    <h6 class="text-center my-3">Choose a currency</h6>
+                    <ul>
+                        <li>United States Dollar<br>USD - US$ <i class="fas fa-check"></i></li>
+                        <li>Euro<br>EUR - €</li>
+                        <li>British Pound<br>GBP - £</li>
+                        <li>Australian Dollar<br>AUD - A$</li>
+                        <li>Canadian Dollar<br>CAD - CA$</li>
+                        <li>Israeli Shekel<br>ILS - ₪</li>
+                    </ul>
+                    <button>Save</button>
+                    <i id="close_currency_popup" class="fas fa-times-circle position-absolute" style="top: 20px;right: 20px;color: gray; font-size: 22px;cursor: pointer;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------ FOOTER END ------------------>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+
+</html>

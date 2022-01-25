@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Earning & Overview | Linkeble</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- FONT AWESOME CDN -->
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script>
+    <!-- CSS LINK -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <!--------   NAVABR-START -------->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a href="index.html">
+                    <img src="assets/images/Linkeble PNG logo.png" width="150px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-dark d-flex align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark mx-2 " href="seller-dashboard.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark mx-2" href="send-offer-chat.html">Chat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark mx-2" href="manage-late-order.html">Orders</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark mx-2" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark mx-2 active" href="#">Earnings</a>
+                        </li>
+                        <!-- bell icon -->
+                        <li id="navbar_bell_pop_up" class="nav-item position-relative">
+                            <a class="nav-link text-dark mx-2 py-2" href="#"><i class="fas fa-bell"></i>
+                            </a>
+                            <div id="bell_pop_up" class="rounded px-4 py-3 position-absolute d-none">
+                                <div class="d-flex align-items-center mb-4">
+                                    <img src="assets/icons/NoPath — копия (43).png">
+                                    <a href="chat.html">
+                                        <div class="ps-3">
+                                            <h6><span>New Message </span>from Nutella</h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>2 minutes ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <img src="assets/icons/Image 589.png">
+                                    <a href="manage-late-order.html">
+                                        <div class="ps-3">
+                                            <h6>Alexa Liras <span>Placed an order</span></h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>23 hours ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <img src="assets/icons/Image 590.png">
+                                    <a href="send-offer-chat.html">
+                                        <div class="ps-3">
+                                            <h6>Laurent Perrier <span>accepted order</span></h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>5 days ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <img src="assets/icons/Image 591.png">
+                                    <a href="chat.html">
+                                        <div class="ps-3">
+                                            <h6><span>New Message from </span>Michael Levi</h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>1 week ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <img src="assets/icons/Image 591.png">
+                                    <a href="offer-revision-request.html">
+                                        <div class="ps-3">
+                                            <h6>Alexa Beck <span>Request Revision</span></h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>1 week ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/icons/Image 591.png">
+                                    <a href="offer-leave-feedback.html">
+                                        <div class="ps-3">
+                                            <h6>James Bond <span>Leave Feedback</span></h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>1 week ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- image -->
+                        <li class="nav-item position-relative" id="navbar_online_user_image">
+                            <a class="nav-link text-center  position-relative" href="#">
+                                <img src="assets/images/Subtraction 1.png" class="rounded-circle user-img" width="80%">
+                                <span class="position-absolute rounded-circle d-block online-mark"></span>
+                            </a>
+                            <div id="logged_in_user_pop_up" class="logged-in-user-pop-up  rounded position-absolute d-none">
+                                <h6 class="mx-4 text-center my-4 rounded">Balance: USD $ 133</h6>
+                                <div class="profile-indicator px-4 p-2" style="background-color: #26BC91;">
+                                    <div class="d-flex justify-content-between align-items-center text-center" style="background-color: #00966B;border-radius: 20px">
+                                        <a href="submit-services-request.html" style="">Buyer Mode</a>
+                                        <a class="active-profile" href="#">Seller Mode</a>
+                                    </div>
+                                </div>
+                                <ul class="px-4">
+                                    <li><a href="my-profile.html">My Profile</a></li>
+                                    <li><a href="seller-dashboard.html">Analytics</a></li>
+                                    <li><a href="buyer-services-request.html">Buyer Service Request</a></li>
+                                    <li><a href="account.html"> Settings</a></li>
+                                    <li><a href="accout-and-security.html"> Help/Support</a></li>
+                                    <li><a href="index.html"> Logout</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--------   NAVABR-END -------->
+    <div class="divider"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 p-4">
+                <h5 class="mb-3">Overview</h5>
+                <div class="profile-overview-area text-white text-center">
+                    <div class="profile-overview py-2 px-3 rounded">
+                        <h5 class="mb-3">Personal Balance</h5>
+                        <div class="d-flex align-items-center">
+                            <span class="profile-overview-active"></span>
+                            <p class="m-0 text-center flex-grow-1 profile-overview-balance-active ">$ 2830</p>
+                        </div>
+                    </div>
+                    <div class="profile-overview py-2 px-3 rounded">
+                        <h5 class="mb-3">Earning in Nov</h5>
+                        <div class="d-flex align-items-center">
+                            <span class=""></span>
+                            <p class="m-0 text-center flex-grow-1">$ 830</p>
+                        </div>
+                    </div>
+                    <div class="profile-overview py-2 px-3 rounded">
+                        <h5 class="mb-3">Pending Clearance</h5>
+                        <div class="d-flex align-items-center">
+                            <span class=""></span>
+                            <p class="m-0 text-center flex-grow-1">$ 300</p>
+                        </div>
+                    </div>
+                    <div class="profile-overview py-2 px-3 rounded">
+                        <h5 class="mb-3">Active Order</h5>
+                        <div class="d-flex align-items-center">
+                            <span class=""></span>
+                            <p class="m-0 text-center flex-grow-1">2 ($360)</p>
+                        </div>
+                    </div>
+                    <div class="profile-overview py-2 px-3 rounded">
+                        <h5 class="mb-3">Ave. selling price</h5>
+                        <div class="d-flex align-items-center">
+                            <span class=""></span>
+                            <p class="m-0 text-center flex-grow-1">$ 540</p>
+                        </div>
+                    </div>
+                    <div class="profile-overview py-2 px-3 rounded">
+                        <h5 class="mb-3">Cancelled Orders</h5>
+                        <div class="d-flex align-items-center">
+                            <span class=""></span>
+                            <p class="m-0 text-center flex-grow-1">0 (-$0)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="analytics-button rounded d-lg-flex text-center  justify-content-between p-3 ">
+                    <button class="analytics-active-button ">Earnings</button>
+                    <button class="">Completed 34</button>
+                    <button class="">Cancelled $0</button>
+                    <button class="">New Orders 3</button>
+                </div>
+                <div class="chart my-5">
+                    <canvas id="myChart" width="400" height="200"></canvas>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+    <div class="balance-method text-white p-3 mb-4">
+        <h2 class="text-center mb-4">WITHDRAW BALANCE VIA</h2>
+        <div class="container d-flex justify-content-evenly align-items-center">
+            <div class="text-center">
+                <img src="assets/icons/paypal-svgrepo-com (4).png" width="70px">
+                <h4 class="mt-2">PayPal Account</h4>
+            </div>
+            <div class="text-center">
+                <img src="assets/icons/bank-transfer-logo-svgrepo-com.png" width="70px">
+                <h4 class="mt-2">Bank Transfer</h4>
+            </div>
+        </div>
+    </div>
+    <div style="overflow-x: auto;">
+        <section class="funds-detail text-white my-5 pb-3">
+            <div class="" style="border:none">
+                <h3 class="mt-3">Active Orders Funds Pending Clearance</h3>
+                <div>
+                    <p class="text-center text-muted">View</p>
+                    <select class="select-option">
+                        <option>All balance activites</option>
+                    </select>
+                </div>
+            </div>
+            <div class="text-muted">
+                <p>Date</p>
+                <p>Source</p>
+                <p>AMOUNT</p>
+            </div>
+            <div>
+                <p>Jan 06, 22</p>
+                <div>
+                    <div class="d-flex align-items-center">
+                        <span>0</span>
+                        <progress class="mx-2" value="32" max="100"> 32% </progress>
+                        <span>100</span>
+                    </div>
+                    <p class="text-center">Funds Pending Clearance</p>
+                </div>
+                <p>& 80</p>
+            </div>
+            <div>
+                <p>Jan 06, 22</p>
+                <div>
+                    <div class="d-flex align-items-center">
+                        <span>0</span>
+                        <progress class="mx-2" value="75" max="100"> 75% </progress>
+                        <span>100</span>
+                    </div>
+                    <p class="text-center">Funds Pending Clearance</p>
+                </div>
+                <p>& 130</p>
+            </div>
+            <div class="py-3">
+                <p>Dec 18, 21</p>
+                <p>Order Revenue</p>
+                <p>& 130</p>
+            </div>
+            <div class="py-3">
+                <p>Dec 15, 21</p>
+                <p>User for Purchasing service</p>
+                <p>& 50</p>
+            </div>
+            <div class="py-3">
+                <p>Dec 18, 21</p>
+                <p>Order Cancelled</p>
+                <p>& 60</p>
+            </div>
+            <div class="py-3">
+                <p>Dec 12, 21</p>
+                <p>Withdrawn Balace</p>
+                <p>& 500</p>
+            </div>
+            <div class="py-3" style="border:none;">
+                <p>Dec 11, 21</p>
+                <p>Order Revenue</p>
+                <p>& 130</p>
+            </div>
+        </section>
+    </div>
+    <!------------------ FOOTER START ------------------>
+    <div class="container-fluid footer pt-3">
+        <!-- LINKS ROW -->
+        <div class="p-5">
+            <div class="row footer-links">
+                <div class="col-md-5">
+                    <h4 class="fw-bold mb-3">Linkeble</h4>
+                    <a href="#">Categories</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Service request</a>
+                    <a href="#">Top services</a>
+                    <a href="#">Payments</a>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="fw-bold mb-3">About</h4>
+                    <a href="#">About us</a>
+                    <a href="#">How it works?</a>
+                    <a href="#">News</a>
+                    <a href="#">Jobs</a>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="fw-bold mb-3">Terms</h4>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms and Conditions</a>
+                    <a href="#">Fees and Charges</a>
+                    <a href="#">Copyright Policy</a>
+                </div>
+            </div>
+        </div>
+        <h4 class="text-center fw-bold">Get the Linkeble App now on:</h4>
+        <div class="text-center my-4">
+            <img src="assets/images/Group 9085.png" class="me-5" width="150px">
+            <img src="assets/images/Group 9086.png" class="ms-5" width="150px">
+        </div>
+        <div class="text-center w-50 mx-auto footer-social-icons">
+            <div class="d-flex justify-content-around">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-snapchat-ghost"></i></a>
+            </div>
+        </div>
+        <div class="px-5 my-4">
+            <hr>
+        </div>
+        <!-- LAST ROW -->
+        <div class="row">
+            <div class="col-md-3">
+                <img src="assets/images/Linkeble PNG logo.png" width="150px">
+            </div>
+            <div class="col-md-6 text-center">
+                <p>Linkeble ® is a registered Trademark of Linkeble Technology
+                    Copyright © 2021 Linkeble Technology </p>
+            </div>
+            <div class="col-md-3 d-flex justify-content-evenly align-items-center">
+                <div>
+                    <i class="fas fa-globe"></i>
+                    <span>English</span>
+                </div>
+                <div>
+                    <i class="fas fa-dollar-sign"></i>
+                    <span>USD</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------ FOOTER END ------------------>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- <script>
+    const ctx = document.getElementById('myChart').getContext('2d');
+    var xValues = [0, 5, 10, 15, 20, 25, 30];
+    var yValues = [0, 100, 200, 300, 400, 500, 600, ];
+    const myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: xValues,
+            datasets: [{
+                fill: false,
+                lineTension: 0,
+                backgroundColor: "rgba(255,0,255,1.0)",
+                borderColor: "rgba(0,0,255,0.1)",
+                data: yValues,
+                // label: '# of Votes',
+                data: '200',
+                backgroundColor: [
+                    'rgba(0, 0, 0, 1)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 255, 255, 1)',
+                    'rgba(255, 1, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 2
+            }]
+        },
+        options: {
+            legend: { display: false },
+            scales: {
+                x: {
+                    // beginAtZero: false
+                },
+                y: {
+                    grid: {
+                        color: 'red',
+                        borderColor: 'grey',
+                        tickColor: 'grey'
+                    }
+                }
+            }
+        }
+    });
+    </script> -->
+    <script>
+    const labels = [
+        '0',
+        '5',
+        '10',
+        '15',
+        '20',
+        '25',
+        '30',
+    ];
+
+    const data = {
+        labels: labels,
+        datasets: [{
+            label: 'My First dataset',
+            // backgroundColor: 'rgb(255, 255, 255)',
+            borderColor: 'rgb(0, 45, 32)',
+            // borderWidth: 1,
+            data: [0, 30, 25, 40, 20, 50, 25, 30, 30, 25, 40],
+            // data: [30, 30],
+            pointBorderColor: 'rgb(255,255,255)',
+            pointBackgroundColor: 'rgb(93,94,91)',
+            pointRadius: 8,
+            pointBorderWidth: 4,
+
+        }]
+    };
+
+
+    const config = {
+        type: 'line',
+        data: data,
+        options: {
+            plugins: {
+                legend: {
+                    display: false,
+                }
+            },
+            scales: {
+                y: {
+                    ticks: {
+                        color: 'white',
+                        callback: function(value, index, values) {
+                            return '$ ' + value;
+                        },
+                        font: {
+                            size: 20,
+                            lineHeight: 2,
+                        }
+                    },
+                    grid: {
+                        color: 'rgb(255,255,255,0.2)',
+                        tickColor: 'black',
+                    }
+                },
+            }
+        }
+    };
+    </script>
+    <script>
+    const myChart = new Chart(
+        document.getElementById('myChart'), config
+    );
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+
+</html>

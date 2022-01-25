@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Offer Feedback | Linkeble</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- FONT AWESOME CDN -->
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script>
+    <!-- CSS LINK -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <!--------   NAVABR-START -------->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a href="index.html">
+                    <img src="assets/images/Linkeble PNG logo.png" width="150px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-dark d-flex align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark mx-2" href="seller-dashboard.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark mx-2" href="send-offer-chat.html">Chat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark mx-2" href="manage-late-order.html">Orders</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark mx-2" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark mx-2" href="earning-&-overview.html">Earnings</a>
+                        </li>
+                        <!-- bell icon -->
+                        <li id="navbar_bell_pop_up" class="nav-item position-relative">
+                            <a class="nav-link text-dark mx-2 py-2" href="#"><i class="fas fa-bell"></i>
+                            </a>
+                            <div id="bell_pop_up" class="rounded px-4 py-3 position-absolute d-none">
+                                <div class="d-flex align-items-center mb-4">
+                                    <img src="assets/icons/NoPath — копия (43).png">
+                                    <a href="chat.html">
+                                        <div class="ps-3">
+                                            <h6><span>New Message </span>from Nutella</h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>2 minutes ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <img src="assets/icons/Image 589.png">
+                                    <a href="manage-late-order.html">
+                                        <div class="ps-3">
+                                            <h6>Alexa Liras <span>Placed an order</span></h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>23 hours ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <img src="assets/icons/Image 590.png">
+                                    <a href="send-offer-chat.html">
+                                        <div class="ps-3">
+                                            <h6>Laurent Perrier <span>accepted order</span></h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>5 days ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <img src="assets/icons/Image 591.png">
+                                    <a href="chat.html">
+                                        <div class="ps-3">
+                                            <h6><span>New Message from </span>Michael Levi</h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>1 week ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <img src="assets/icons/Image 591.png">
+                                    <a href="offer-revision-request.html">
+                                        <div class="ps-3">
+                                            <h6>Alexa Beck <span>Request Revision</span></h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>1 week ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/icons/Image 591.png">
+                                    <a href="offer-leave-feedback.html">
+                                        <div class="ps-3">
+                                            <h6>James Bond <span>Leave Feedback</span></h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>1 week ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- image -->
+                        <li class="nav-item position-relative" id="navbar_online_user_image">
+                            <a class="nav-link text-center  position-relative" href="#">
+                                <img src="assets/images/Subtraction 1.png" class="rounded-circle user-img" width="80%">
+                                <span class="position-absolute rounded-circle d-block online-mark"></span>
+                            </a>
+                            <div id="logged_in_user_pop_up" class="logged-in-user-pop-up  rounded position-absolute d-none">
+                                <h6 class="mx-4 text-center my-4 rounded">Balance: USD $ 133</h6>
+                                <div class="profile-indicator px-4 p-2" style="background-color: #26BC91;">
+                                    <div class="d-flex justify-content-between align-items-center text-center" style="background-color: #00966B;border-radius: 20px">
+                                        <a href="submit-services-request.html" style="">Buyer Mode</a>
+                                        <a class="active-profile" href="#">Seller Mode</a>
+                                    </div>
+                                </div>
+                                <ul class="px-4">
+                                    <li><a href="my-profile.html">My Profile</a></li>
+                                    <li><a href="seller-dashboard.html">Analytics</a></li>
+                                    <li><a href="buyer-services-request.html">Buyer Service Request</a></li>
+                                    <li><a href="account.html"> Settings</a></li>
+                                    <li><a href="accout-and-security.html"> Help/Support</a></li>
+                                    <li><a href="index.html"> Logout</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--------   NAVABR-END -------->
+    <div class="container mt-5" style="overflow-x: auto;">
+        <div class="active-orders px-lg-5">
+            <table class=" active-order-table" width="100%" style="min-width: 700px">
+                <tr>
+                    <td>
+                        <img src="assets/images/1Mask Group 13@2x.png">
+                    </td>
+                    <td>
+                        <div class="d-flex mb-3  align-items-center">
+                            <img src="assets/images/Mask Group 6.png" class="rounded" width="50px">
+                            <div class="name-and-info ms-2">
+                                <h5 class="m-0">Johnathen</h5>
+                                <p class="m-0">USA</p>
+                                <p class="m-0">Check Order Details</p>
+                            </div>
+                        </div>
+                        <div class="about-active-order ms-2">
+                            <h5 class="m-0 ">$700</h5>
+                            <p class="m-0">Develop Professional Mobile Apps for Android & iOS</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="name-and-info ms-3">
+                            <h5 class="m-0">Status</h5>
+                            <span class="show" style="background-color: #fff; 
+                            color: #00966B">Completed</span>
+                        </div>
+                        <div class="name-and-info mt-4 ms-3">
+                            <h5 class="m-0">Delivery</h5>
+                            <span class="show"><i class="far fa-clock me-1"></i>5day, 11hr, 44min</span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="container">
+        <div class="d-flex px-lg-5">
+            <div class="vertical-line me-5 ms-4"></div>
+            <div class="place-order-content flex-grow-1  px-2">
+                <!-- Order place -->
+                <div class="mb-4 position-relative">
+                    <img class="icon-image" src="assets/icons/order.png">
+                    <div id="order_place_header" class="order-details-header rounded px-4 py-2 d-flex align-items-center justify-content-between">
+                        <h4 class="m-0">Order Placed</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div id="order_place_body" class="order-details-body px-4 py-2">
+                        <ul>
+                            <li><span> 11 October, 2021</span>
+                                <span>Order # FO2C8DEB9AZ2</span>
+                            </li>
+                            <li>Delivery Date: 25 October, 2021</li>
+                            <li>Develop Mobile Apps Android & iOS</li>
+                            <li><span>Revisions</span> <span>Unlimited</span></li>
+                            <li><span>App Mobile Operating Systems</span>
+                                <span>2</span>
+                            </li>
+                            <li><span>Network Integration</span>
+                                <i class="fas fa-check"></i></li>
+                            <li><span>App Deployment</span>
+                                <i class="fas fa-check"></i></li>
+                            <li><span>AI Model Integrations</span>
+                                <i class="fas fa-check"></i></li>
+                            <li><span>Ads Integration</span>
+                                <i class="fas fa-check"></i></li>
+                            <li><span>Optimise Performance</span>
+                                <i class="fas fa-check"></i></li>
+                            <li><span>Source Files</span>
+                                <i class="fas fa-check"></i></li>
+                            <li><span>App Animations</span>
+                                <i class="fas fa-check"></i></li>
+                            <li><span>Total Budget (Single Payment)</span>
+                                <span>$ 500</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Service Requirements -->
+                <div class="mb-4 position-relative">
+                    <img class="icon-image" src="assets/icons/writing.png">
+                    <div id="service_requirement_header" class="order-details-header rounded px-4 py-2 d-flex align-items-center justify-content-between">
+                        <h4 class="m-0">Service Requirements</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div id="service_requirement_body" class="order-details-body px-4 py-2">
+                        <h6>Me : <span class="text-muted ms-4">Hey Sir! Kindly let know complete details for the app</span></h6>
+                        <h6>Johnathen:</h6>
+                        <span>Basic Features-Cost to Develop Online Marketplace App likeFiverr. System User Client mobile app+web, Freelancermobile app+web & Admin Panel</span>
+                        <ol>
+                            <li>Sign up:</li>
+                            <li>Finding a Service:</li>
+                            <li>Placing an order:</li>
+                            <li>Buyer Request:</li>
+                            <li>Remove Request:</li>
+                            <li>Send Offer:</li>
+                            <li>Messaging:</li>
+                            <li>Pay for Gig:</li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- Order accepted -->
+                <div class="mb-4 position-relative">
+                    <img class="icon-image" src="assets/icons/success.png">
+                    <div class="order-details-header rounded px-4 py-2 d-flex align-items-center justify-content-between">
+                        <h4 class="m-0">Order Accepted</h4>
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+                <!-- Delivery Date -->
+                <div class="mb-4 position-relative">
+                    <img class="icon-image" src="assets/icons/time.png">
+                    <div class="order-details-header rounded px-4 py-2 d-flex align-items-center justify-content-between">
+                        <h4 class="m-0">Delivery Date changed to 30 October, 2021</h4>
+                    </div>
+                </div>
+                <!-- Service Delivery One -->
+                <div class="mb-4 position-relative">
+                    <img class="icon-image" src="assets/icons/delivery.png">
+                    <div id="service_delivery_header" class="order-details-header rounded px-4 py-2 d-flex align-items-center justify-content-between">
+                        <h4 class="m-0">Service Delivery</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div id="service_delivery_body" class="order-details-body px-3 px-lg-5 py-2">
+                        <p>Hey great buyer! Here are the completed project delivery.kindly go through the service describe, and let me knowif there is even a single changes, modifications orsuggestions. I would be happy to do that.Thanks again Have a great time. Stay Blessed.Scarlet_ann</p>
+                        <p>Source File</p>
+                        <div class="order-file-images d-flex justify-content-between align-items-center">
+                            <img src="assets/icons/apk-file.png">
+                            <h3 class="flex-grow-1 ms-5" style="color: #00966B">Linkeble.pk</h3>
+                            <img src="assets/icons/download.png">
+                        </div>
+                        <div class="mt-4 order-file-images d-flex justify-content-between align-items-center">
+                            <img src="assets/icons/adobe-xd-file.png">
+                            <h3 class="flex-grow-1 ms-5" style="color: #90368B">Linkeble.xd</h3>
+                            <img src="assets/icons/download.png">
+                        </div>
+                    </div>
+                </div>
+                <!-- Service Delivery Two -->
+                <div class="mb-4 position-relative">
+                    <img class="icon-image" src="assets/icons/g3759.png">
+                    <div id="service_delivery_two_header" class="order-details-header rounded px-4 py-2 d-flex align-items-center justify-content-between">
+                        <h4 class="m-0">Service Delivery</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div id="service_delivery_two_body" class="order-details-body px-3 px-lg-5 py-2">
+                        <p>Hey Scarlet Ann.<br>Everything is perfect. I love the design and the developmentI just wanted to let you know kindly change the themecolor for the app. Here are some inspirations that may help</p>
+                        <p>thanks</p>
+                        <div class="order-file-images d-flex justify-content-between align-items-center">
+                            <img src="assets/icons/image.png">
+                            <h3 class="flex-grow-1 ms-5">Theme inspiration.jpg</h3>
+                            <img src="assets/icons/download.png">
+                        </div>
+                    </div>
+                </div>
+                <!-- Service Delivery Three -->
+                <div class="mb-4 position-relative">
+                    <img class="icon-image" src="assets/icons/delivery.png">
+                    <div id="service_delivery_three_header" class="order-details-header rounded px-4 py-2 d-flex align-items-center justify-content-between">
+                        <h4 class="m-0">Service Delivery</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div id="service_delivery_three_body" class="order-details-body px-3 px-lg-5 py-2">
+                        <p>Hey sir! I hope you are doing well here are the modifiedversion of the theme colour.</p>
+                        <p class="my-4">Thanks again Have a great time. Stay Blessed.Scarlet_ann</p>
+                        <p>thanks</p>
+                        <div class="order-file-images d-flex justify-content-between align-items-center">
+                            <img src="assets/icons/adobe-xd-file.png">
+                            <h3 class="flex-grow-1 ms-5" style="color: #90368B">Linkeble.xd</h3>
+                            <img src="assets/icons/download.png">
+                        </div>
+                    </div>
+                </div>
+                <!-- Client Rating -->
+                <div class="mb-4 position-relative">
+                    <img class="icon-image" src="assets/icons/review.png">
+                    <div id="client_rating_header" class="order-details-header rounded px-4 py-2 d-flex align-items-center justify-content-between">
+                        <h4 class="m-0">Client rating</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div id="client_rating_body" class="order-details-body px-3 px-lg-5 py-2">
+                        <p class="w-75 mx-lg-auto">Perfect service delivery. She is really great and hardworkingI promise to hire you for future projects. and I will shareyour service with my friends. God bless you</p>
+                        <div class="reviews">
+                            <div class="text-center mt-5">
+                                <div class="d-flex justify-content-evenly mx-auto w-lg-75 ">
+                                    <div>
+                                        <span>Service Deliver</span>
+                                        <div class="rounded-circle text-center reviews-circle mx-auto my-2">
+                                            <h4 style="margin-top: 1.4rem" class="text-dark">5.0</h4>
+                                        </div>
+                                        <div class="star-icons mx-auto" style="font-size: 9px!important">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span>Communication</span>
+                                        <div class="rounded-circle text-center reviews-circle mx-auto my-2">
+                                            <h4 style="margin-top: 1.4rem" class="text-dark">5.0</h4>
+                                        </div>
+                                        <div class="star-icons mx-auto text-center" style="font-size: 9px!important">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span>Recommend</span>
+                                        <div class="rounded-circle text-center reviews-circle mx-auto my-2">
+                                            <h4 style="margin-top: 1.4rem" class="text-dark">5.0</h4>
+                                        </div>
+                                        <div class="star-icons mx-auto" style="font-size: 9px!important">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- My Review -->
+                <div class="mb-4 position-relative">
+                    <img class="icon-image" src="assets/icons/review.png">
+                    <div id="my_review_header" class="order-details-header rounded px-4 py-2 d-flex align-items-center justify-content-between">
+                        <h4 class="m-0">My Review</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div id="my_review_body" class="order-details-body px-3 px-lg-5 py-2">
+                        <p>Leave Feedback about client</p>
+                        <div class="w-50 my-5 d-flex justify-content-between align-items-center star-icons mx-auto" style="font-size: 20px!important; color: #544103;cursor: pointer;">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <form action="#" method="POST">
+                            <textarea class="rounded" placeholder="Your Feedback here.."></textarea>
+                            <input type="submit" name="" value="Post Feedback">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center py-3 mb-4" style="background-color: #00966B">
+        <p>The requested order successfully delivered and marked as done</p>
+        <img src="assets/icons/package-shipping-and-delivery-svgrepo-com.png" width="50px">
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+
+</html>

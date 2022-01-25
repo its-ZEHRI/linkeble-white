@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Post Request | Linkeble</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- FONT AWESOME CDN -->
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script>
+    <!-- CSS LINK -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <!--------   NAVABR-START -------->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a href="#">
+                    <img src="assets/images/Linkeble PNG logo.png" width="150px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-white d-flex align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark ms-3" href="chat.html">Chat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark ms-3" href="active-orders.html">Orders</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark ms-3" href="Favourites.html">Favourites</a>
+                        </li>
+                        <!-- bell icon -->
+                        <li id="navbar_bell_pop_up" class="nav-item position-relative">
+                            <a class="nav-link text-white mx-2 py-2" href="#"><i class="fas fa-bell"></i>
+                            </a>
+                            <div id="bell_pop_up" class="rounded px-4 py-3 position-absolute d-none">
+                                <div class="d-flex align-items-center mb-4">
+                                    <img src="assets/icons/NoPath — копия (43).png">
+                                    <a href="chat.html">
+                                        <div class="ps-3">
+                                            <h6><span>New Message </span>from Nutella</h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>2 minutes ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <img src="assets/icons/Image 589.png">
+                                    <a href="manage-late-order.html">
+                                        <div class="ps-3">
+                                            <h6>Alexa Liras <span>Placed an order</span></h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>23 hours ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <img src="assets/icons/Image 590.png">
+                                    <a href="send-offer-chat.html">
+                                        <div class="ps-3">
+                                            <h6>Laurent Perrier <span>accepted order</span></h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>5 days ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <img src="assets/icons/Image 591.png">
+                                    <a href="chat.html">
+                                        <div class="ps-3">
+                                            <h6><span>New Message from </span>Michael Levi</h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>1 week ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <img src="assets/icons/Image 591.png">
+                                    <a href="offer-revision-request.html">
+                                        <div class="ps-3">
+                                            <h6>Alexa Beck <span>Request Revision</span></h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>1 week ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/icons/Image 591.png">
+                                    <a href="offer-leave-feedback.html">
+                                        <div class="ps-3">
+                                            <h6>James Bond <span>Leave Feedback</span></h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>1 week ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- image -->
+                        <li class="nav-item position-relative" id="navbar_online_user_image">
+                            <a class="nav-link text-center  position-relative" href="#">
+                                <img src="assets/images/Subtraction 1.png" class="rounded-circle user-img" width="80%">
+                                <span class="position-absolute rounded-circle d-block online-mark"></span>
+                            </a>
+                            <div id="logged_in_user_pop_up" class="logged-in-user-pop-up  rounded position-absolute d-none">
+                                <h6 class="mx-4 text-center my-4 rounded">Balance: USD $ 133</h6>
+                                <div class="profile-indicator px-4 p-2" style="background-color: #26BC91;">
+                                    <div class="d-flex justify-content-between align-items-center text-center" style="background-color: #00966B;border-radius: 20px">
+                                        <a class="active-profile" href="#" style="">Buyer Mode</a>
+                                        <a href="seller-dashboard.html">Seller Mode</a>
+                                    </div>
+                                </div>
+                                <ul class="px-4">
+                                    <li><a href="my-profile.html">My Profile</a></li>
+                                    <li><a href="seller-dashboard.html">My Selling Dashboard</a></li>
+                                    <li><a href="service-request.html">Post Service Request</a></li>
+                                    <li><a href="post-request.html">Posted Requests</a></li>
+                                    <li><a href="account.html"> Settings</a></li>
+                                    <li><a href="account-and-security.html"> Help/Support</a></li>
+                                    <li id="select_language" style="cursor: pointer;">
+                                        <i class="fas fa-globe"></i>
+                                        <span>English</span>
+                                    </li>
+                                    <li id="select_currency" style="cursor: pointer;">
+                                        <i class="fas fa-dollar-sign"></i>
+                                        <span>USD</span>
+                                    </li>
+                                    <li><a href="index.html"> Logout</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--------   NAVABR-END -------->
+    <div class="tags container-fluid my-2">
+        <div class=" container d-flex justify-content-between py-2">
+            <a href="some-services.html"> Data Science</a>
+            <a href="some-services.html"> Programming Services</a>
+            <a href="some-services.html"> Artificial Intelligence</a>
+            <a href="some-services.html"> Blockchain</a>
+            <a href="some-services.html"> ERP</a>
+            <a href="some-services.html"> Cloud Engineering</a>
+            <a href="some-services.html"> Meta Analysis</a>
+            <a href="some-services.html"> Vibration Analysis</a>
+            <a href="some-services.html"> SCANA developer</a>
+        </div>
+    </div>
+    <div class="container buyer-request-top mb-3 py-2 d-flex justify-content-between align-items-center">
+        <p class="m-0">Seller Proposal ON my Post</p>
+        <div class="d-flex justify-content-between align-items-center">
+            <span class="text-muted me-3" style="">Delete Current Request</span>
+            <a href="service-request.html" style=""><i class="fas fa-plus me-2"></i>Post New Request</a>
+        </div>
+    </div>
+    <div class="container buyer-request" style="overflow-x: auto;">
+        <table class="text-center" width="100%" style=" min-width: 1100px">
+            <tr>
+                <td>Date</td>
+                <td>Buyer</td>
+                <td>Service Request</td>
+                <td>BUDGET</td>
+                <td>Delivery</td>
+                <td>blank</td>
+            </tr>
+            <tr>
+                <td>Dec 02, 2021</td>
+                <td class="text-center">
+                    <img src="assets/icons/NoPath — копия (41).png" width="50px">
+                    <span class="d-block">Helena Linde</span>
+                </td>
+                <td>
+                    <span>I have unworkable code and need someone to fix it in netbeanse compiler more</span>
+                    <div>
+                        <img src="assets/icons/apk-file.png" width="30px">
+                        <span class="mx-4" style="font-size: 12px; color: #00966B">Linkeble.apk</span>
+                        <img src="assets/icons/download.png" width="20px">
+                    </div>
+                </td>
+                <td>$ 50</td>
+                <td>2 days</td>
+                <td><a href="chat.html">Contact</a></td>
+            </tr>
+            <tr>
+                <td>Dec 02, 2021</td>
+                <td class="text-center">
+                    <img src="assets/icons/NoPath — копия (42).png" width="50px">
+                    <span class="d-block">Lisa Jason</span>
+                </td>
+                <td>
+                    <span>CMOS VLSI - Candence virtuoso padframe layout design</span>
+                </td>
+                <td>$ 450</td>
+                <td>1 days</td>
+                <td><a href="chat.html">Contact</a></td>
+            </tr>
+            <tr>
+                <td>Dec 02, 2021</td>
+                <td class="text-center">
+                    <img src="assets/icons/NoPath — копия (43).png" width="50px">
+                    <span class="d-block">Nutella</span>
+                </td>
+                <td>
+                    <span>Hybrid System Design Engineering for AGV(automated guided vehicle).</span>
+                </td>
+                <td>$ 34</td>
+                <td>24 hour</td>
+                <td><a href="chat.html">Contact</a></td>
+            </tr>
+            <tr>
+                <td>Dec 02, 2021</td>
+                <td class="text-center">
+                    <img src="assets/icons/Image589.png" width="50px">
+                    <span class="d-block">Alexa Liras</span>
+                </td>
+                <td>
+                    <span>maadi ree i am look for who can publish my 4 app at 80$</span>
+                </td>
+                <td>$ 44</td>
+                <td>1 year</td>
+                <td><a href="chat.html">Contact</a></td>
+            </tr>
+        </table>
+    </div>
+    <!-- LANGUAGE POP UP -->
+    <div id="language_pop_up" class="position-fixed d-none" style="">
+        <div class="lang-pop-up-body" style="background-color: #000;color: #fff">
+            <div class="position-relative px-5 py-3">
+                <h6 class="text-center my-3">Select Language</h6>
+                <ul>
+                    <li>English<span>(English)</span><i class="fas fa-check"></i></li>
+                    <li>Lwo<span>(Acholi)</span></li>
+                    <li>Arfikaans<span>(Arfikaans)</span></li>
+                    <li>German <span>(Deutsch)</span></li>
+                    <li>French <span>(François)</span></li>
+                    <li>Spanish<span>(Español)</span></li>
+                    <li>Italian<span>(Italiano)</span></li>
+                    <li>Romanian<span>(Română)</span></li>
+                    <li>Portuguese<span>(Português)</span></li>
+                    <li>Swedish<span>(Svenska)</span></li>
+                    <li>Danish<span>(Dansk)</span></li>
+                    <li>Urdu<span>(اردو)</span></li>
+                </ul>
+                <button>Save</button>
+                <i id="close_lang_popup" class="fas fa-times-circle position-absolute" style="top: 20px;right: 20px;color: gray; font-size: 22px;cursor: pointer;"></i>
+            </div>
+        </div>
+    </div>
+    <!-- CURRENCY POP UP -->
+    <div id="currency_pop_up" class="position-fixed d-none">
+        <div class="currency-pop-up-body" style="background-color: #000;color: #fff">
+            <div class="position-relative px-5 py-3">
+                <h6 class="text-center my-3">Choose a currency</h6>
+                <ul>
+                    <li>United States Dollar<br>USD - US$ <i class="fas fa-check"></i></li>
+                    <li>Euro<br>EUR - €</li>
+                    <li>British Pound<br>GBP - £</li>
+                    <li>Australian Dollar<br>AUD - A$</li>
+                    <li>Canadian Dollar<br>CAD - CA$</li>
+                    <li>Israeli Shekel<br>ILS - ₪</li>
+                </ul>
+                <button>Save</button>
+                <i id="close_currency_popup" class="fas fa-times-circle position-absolute" style="top: 20px;right: 20px;color: gray; font-size: 22px;cursor: pointer;"></i>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dashboard | Linkeble</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- FONT AWESOME CDN -->
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script>
+    <!-- CSS LINK -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <!--------   NAVABR-START -------->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a href="index.html">
+                    <img src="assets/images/Linkeble PNG logo.png" width="150px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-dark d-flex align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark mx-2 active" href="#">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark mx-2" href="send-offer-chat.html">Chat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark mx-2" href="manage-late-order.html">Orders</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark mx-2" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark mx-2" href="earning-&-overview.html">Earnings</a>
+                        </li>
+                        <!-- bell icon -->
+                        <li id="navbar_bell_pop_up" class="nav-item position-relative">
+                            <a class="nav-link text-dark mx-2 py-2" href="#"><i class="fas fa-bell"></i>
+                            </a>
+                            <div id="bell_pop_up" class="rounded px-4 py-3 position-absolute d-none">
+                                <div class="d-flex align-items-center mb-4">
+                                    <img src="assets/icons/NoPath — копия (43).png">
+                                    <a href="chat.html">
+                                        <div class="ps-3">
+                                            <h6><span>New Message </span>from Nutella</h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>2 minutes ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <img src="assets/icons/Image 589.png">
+                                    <a href="manage-late-order.html">
+                                        <div class="ps-3">
+                                            <h6>Alexa Liras <span>Placed an order</span></h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>23 hours ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <img src="assets/icons/Image 590.png">
+                                    <a href="send-offer-chat.html">
+                                        <div class="ps-3">
+                                            <h6>Laurent Perrier <span>accepted order</span></h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>5 days ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <img src="assets/icons/Image 591.png">
+                                    <a href="chat.html">
+                                        <div class="ps-3">
+                                            <h6><span>New Message from </span>Michael Levi</h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>1 week ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <img src="assets/icons/Image 591.png">
+                                    <a href="offer-revision-request.html">
+                                        <div class="ps-3">
+                                            <h6>Alexa Beck <span>Request Revision</span></h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>1 week ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/icons/Image 591.png">
+                                    <a href="offer-leave-feedback.html">
+                                        <div class="ps-3">
+                                            <h6>James Bond <span>Leave Feedback</span></h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>1 week ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- image -->
+                        <li class="nav-item position-relative" id="navbar_online_user_image">
+                            <a class="nav-link text-center  position-relative" href="#">
+                                <img src="assets/images/Subtraction 1.png" class="rounded-circle user-img" width="80%">
+                                <span class="position-absolute rounded-circle d-block online-mark"></span>
+                            </a>
+                            <div id="logged_in_user_pop_up" class="logged-in-user-pop-up  rounded position-absolute d-none">
+                                <h6 class="mx-4 text-center my-4 rounded">Balance: USD $ 133</h6>
+                                <div class="profile-indicator px-4 p-2" style="background-color: #26BC91;">
+                                    <div class="d-flex justify-content-between align-items-center text-center" style="background-color: #00966B;border-radius: 20px">
+                                        <a href="submit-services-request.html" style="">Buyer Mode</a>
+                                        <a class="active-profile" href="#">Seller Mode</a>
+                                    </div>
+                                </div>
+                                <ul class="px-4">
+                                    <li><a href="my-profile.html">My Profile</a></li>
+                                    <li><a href="seller-dashboard.html">Analytics</a></li>
+                                    <li><a href="buyer-services-request.html">Buyer Service Request</a></li>
+                                    <li><a href="account.html"> Settings</a></li>
+                                    <li><a href="accout-and-security.html"> Help/Support</a></li>
+                                    <li><a href="index.html"> Logout</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--------   NAVABR-END -------->
+    <div class="divider"></div>
+    <div class="container">
+        <div class="row ">
+            <div class="col-lg-4 col-sm-6 p-lg-4 py-2 ">
+                <div class="seller_profile p-3 ">
+                    <div style="border-radius: 50%" class="mx-auto profile-pic">
+                        <img src="assets/images/Mask Group 11.png" class="w-100">
+                    </div>
+                    <div class="text-center">
+                        <h6 class="my-2">Emma Julia <span style="font-size: 13px;">(Level 2) <img src="assets/images/verified-svgrepo-com.png" class="ms-2"></span></h6>
+                        <p class="text_size m-0 text-dark">client satisfaction is my main moto</p>
+                        <p class="text_size  text-dark my-1"><i class="fas fa-map-marker-alt me-2"></i> New Yark United States</p>
+                    </div>
+                    <div class="profile-level d-flex align-items-center rounded bg-light text-dark">
+                        <i class="fas fa-star"></i>
+                        <div class="w-100 mx-2 ">
+                            <h6 class="m-0">Next Level</h6>
+                            <div class="d-flex align-items-center">
+                                <div class="p-bar rounded-pill w-100">
+                                    <div class="p-bar-value rounded-pill"></div>
+                                </div>
+                                <span class="ms-2">90%</span>
+                                <span class="ms-2">Level(1)</span>
+                                <i class="fas fa-chevron-right ms-2 align-self-start"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-info d-flex justify-content-between rounded mt-3 py-2 ps-4 px-3">
+                        <div>
+                            <p class="mb-1">Ave. Response Rate</p>
+                            <span>30 mintues</span>
+                        </div>
+                        <div class="align-self-end">
+                            <div class="progress blue">
+                                <span class="progress-left">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <span class="progress-right">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <div class="progress-value">90%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-info d-flex justify-content-between rounded mt-3 py-2 ps-4 pe-3">
+                        <div>
+                            <p class="mb-1">Order Complition</p>
+                            <span>24 Orders</span>
+                        </div>
+                        <div class="align-self-end">
+                            <div class="progress blue">
+                                <span class="progress-left">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <span class="progress-right">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <div class="progress-value">90%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-info d-flex justify-content-between rounded mt-3 py-2 ps-4 pe-3">
+                        <div>
+                            <p class="mb-1">On-Time Delivery</p>
+                            <span>23 Orders Delivered on time</span>
+                        </div>
+                        <div class="align-self-end">
+                            <div class="progress blue">
+                                <span class="progress-left">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <span class="progress-right">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <div class="progress-value">90%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-info d-flex justify-content-between rounded mt-3 py-2 ps-4 pe-3">
+                        <div>
+                            <p class="mb-1">Positive Rating</p>
+                            <span>As of Previous month</span>
+                        </div>
+                        <div class="align-self-end">
+                            <div class="progress blue">
+                                <span class="progress-left">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <span class="progress-right">
+                                    <span class="progress-bar"></span>
+                                </span>
+                                <div class="progress-value">90%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between mt-3 mb-2">
+                        <span>
+                            <img src="assets/icons/Icon feather-user.png" class="Icon-seller me-3"> Member Since</span>
+                        <span class="">2020</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class=""><img src="assets/icons/Icon ionic-md-time.png" class="Icon-seller me-3"> Response time</span>
+                        <span class="">30 min</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class=""><img src="assets/icons/Icon feather-send.png" class="Icon-seller me-3"> Most Recent Delivery</span>
+                        <span class="">4 hr ago</span>
+                    </div>
+                    <div class="">
+                        <h5><img src="assets/icons/Icon ionic-ios-globe.png" class="Icon-seller me-3"> Languages</h5>
+                        <ul class="d-flex justify-content-between" style="font-size: 13px;">
+                            <li class="">English</li>
+                            <li>Urdu(Native)</li>
+                            <li>Pashto</li>
+                        </ul>
+                    </div>
+                    <div class="mt-4">
+                        <h6>Description</h6>
+                        <p class="ps-lg-4 pe-1" style="font-size: 14px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis magna justo, scelerisque et euismod sit amet,
+                            eleifend quis magna. Sed fringilla, est at volutpat sodales, nisl eros tristique sapien,</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="mt-3 marker-color">
+                        <h6>Services & Experties</h6>
+                        <ul class="ps-3 p-0 marker-color">
+                            <li class="me-3">Flutter</li>
+                            <li class="me-3">Node JS</li>
+                            <li class="me-3">AWS</li>
+                            <li class="me-3">Firebase</li>
+                            <li class="me-3">JavaScript</li>
+                            <li class="me-3">React Native</li>
+                        </ul>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="mt-3">
+                        <h6>Education</h6>
+                        <ul class="list-unstyled" style="font-size: 14px;">
+                            <li class="w-75 ms-lg-4">B.Sc. - Mechanical engineering MIT, United States</li>
+                            <li class="w-75 ms-lg-4">Certificate - Marine Engineering</li>
+                        </ul>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="mt-3">
+                        <h6>Certificate</h6>
+                        <ul class="list-unstyled" style="font-size: 14px">
+                            <li class="w-75 ms-lg-4">Certifications</li>
+                            <li class="w-75 ms-lg-4">Native App developer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 col-sm-6 p-4 mt-3">
+                <div style="background-color: #002D20" class="rounded p-3 d-lg-flex justify-content-between align-items-center">
+                    <p class="m-0 text-center text-white">Completed orders - 12 ($570)</p>
+                    <select class="select-option">
+                        <option>Completed Orders(12)</option>
+                    </select>
+                </div>
+                <div class="mt-5 d-flex justify-content-between align-items-center">
+                    <h5 class="">Earning Overview</h5>
+                    <a href="#" style="text-decoration: none; color: #00966B">Learn more</a>
+                </div>
+                <div class="analytics-button mt-2 rounded d-lg-flex text-center  justify-content-between p-3">
+                    <button class="analytics-active-button ">Earnings</button>
+                    <button class="">Completed 34</button>
+                    <button class="">Cancelled $0</button>
+                    <button class="">New Orders 3</button>
+                </div>
+                <div class="chart my-5">
+                    <canvas id="myChart" width="400" height="250"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container px-5">
+        <h3 class="my-3">Analytics</h3>
+        <div class="analytics-profile-overview text-center  text-white" style="">
+            <div class="profile-overview py-2 px-3 rounded">
+                <h5 class="mb-3">Personal Balance</h5>
+                <div class="d-flex align-items-center">
+                    <span class="profile-overview-active"></span>
+                    <p class="m-0 text-center flex-grow-1 profile-overview-balance-active ">$ 2830</p>
+                </div>
+            </div>
+            <div class="profile-overview py-2 px-3 rounded">
+                <h5 class="mb-3">Earning in Nov</h5>
+                <div class="d-flex align-items-center">
+                    <span class=""></span>
+                    <p class="m-0 text-center flex-grow-1">$ 830</p>
+                </div>
+            </div>
+            <div class="profile-overview py-2 px-3 rounded">
+                <h5 class="mb-3">Completed Orders</h5>
+                <div class="d-flex align-items-center">
+                    <span class=""></span>
+                    <p class="m-0 text-center flex-grow-1">3</p>
+                </div>
+            </div>
+            <div class="profile-overview py-2 px-3 rounded">
+                <h5 class="mb-3">Pending Clearance</h5>
+                <div class="d-flex align-items-center">
+                    <span class=""></span>
+                    <p class="m-0 text-center flex-grow-1">$ 300</p>
+                </div>
+            </div>
+        </div>
+        <h2 class="text-center my-5">Your seller level Performance</h2>
+        <div class="text-center">
+            ----------------Graph------------------
+        </div>
+        <h3 class="my-4">Achieve these goals to become a Unlock the next level</h3>
+        <div class="mt-5 analytics-profile-overview text-center text-white" style="">
+            <div>
+                <div class="profile-overview py-2  rounded">
+                    <h5 class="mb-3">Selling seniority</h5>
+                    <div class="d-flex align-items-center px-3">
+                        <span class="profile-overview-active"></span>
+                        <p class="m-0 text-center flex-grow-1 profile-overview-balance-active ">23 days</p>
+                    </div>
+                </div>
+                <p class="mt-2" style="font-size: 12px">Complete at least 50 days as a seller</p>
+            </div>
+            <div>
+                <div class="profile-overview py-2  rounded">
+                    <h5 class="mb-3">Orders</h5>
+                    <div class="d-flex align-items-center px-3">
+                        <span class=""></span>
+                        <p class="m-0 text-center flex-grow-1">2</p>
+                    </div>
+                </div>
+                <p class="mt-2" style="font-size: 12px">Complete 5 Orders all time</p>
+            </div>
+            <div>
+                <div class="profile-overview py-2  rounded">
+                    <h5 class="mb-3">Earnings</h5>
+                    <div class="d-flex align-items-center px-3">
+                        <span class=""></span>
+                        <p class="m-0 text-center flex-grow-1">$300</p>
+                    </div>
+                </div>
+                <p class="mt-2" style="font-size: 12px">Earn at least 300 (all time)</p>
+            </div>
+            <div>
+                <div class="profile-overview py-2  rounded">
+                    <h5 class="mb-3">No warnings</h5>
+                    <div class="d-flex align-items-center px-3">
+                        <span class=""></span>
+                        <p class="m-0 text-center flex-grow-1">4 Weeks</p>
+                    </div>
+                </div>
+                <p class="mt-2" style="font-size: 12px">Avoid receiving warnings</p>
+            </div>
+        </div>
+    </div>
+    <div class="container rounded my-5 px-lg-5 p-4 d-lg-flex align-items-center justify-content-between text-white" style="background-color:  #002D20">
+        <div>
+            <h3>Learn to build your success be the best on Linkeble</h3>
+            <p class="mt-4" style="font-size: 13px; line-height: 2.5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis magna justo, scelerisque et euismod sit amet, eleifend quis magna. Sed fringilla, est at volutpat sodales, nisl eros tristique sapien, ut gravida urna lorem a odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis magna justo, scelerisque et euismod sit amet, eleifend quis magna. S</p>
+        </div>
+        <img src="assets/icons/Success factors-rafiki.png" width="200px">
+    </div>
+    <div class="container">
+        <hr>
+    </div>
+    <div class="container my-5">
+        <div class="reviews">
+            <div class="text-center mt-5">
+                <h3>5.0</h3>
+                <div class="star-icons">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="text-muted mt-2">Based on 48 reviews</p>
+                <div class="d-flex justify-content-evenly mx-auto w-lg-75">
+                    <div>
+                        <span>Service Deliver</span>
+                        <div class="rounded-circle text-center reviews-circle mx-auto my-2">
+                            <h4 style="margin-top: 1.4rem">5.0</h4>
+                        </div>
+                        <div class="star-icons mx-auto" style="font-size: 9px!important">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <span>Communication</span>
+                        <div class="rounded-circle text-center reviews-circle mx-auto my-2">
+                            <h4 style="margin-top: 1.4rem">5.0</h4>
+                        </div>
+                        <div class="star-icons mx-auto text-center" style="font-size: 9px!important">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <span>Recommend</span>
+                        <div class="rounded-circle text-center reviews-circle mx-auto my-2">
+                            <h4 style="margin-top: 1.4rem">5.0</h4>
+                        </div>
+                        <div class="star-icons mx-auto" style="font-size: 9px!important">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5">
+                <div class="comments">
+                    <div class="d-flex">
+                        <div><img src="assets/images/Mask Group 6.png" class="w-75 rounded-circle"></div>
+                        <div class="w-100">
+                            <h5>Johnathon James <span class="text-muted ms-2" style="font-size: 12px">(United States)</span></h5>
+                            <div class="d-flex justify-content-between">
+                                <div class="star-icons">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="text-white fs-6 ms-3">5.0</span>
+                                </div>
+                                <div class="ms-5 mt-2">
+                                    <p style="font-size: 14px">2 days ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mt-2">He is excellent hardworking. He knows how to give a realist touch to the job service. Being to young for this job but he is perfectly professional.</p>
+                </div>
+                <div class="divider"></div>
+                <div class="comments mt-4">
+                    <div class="d-flex">
+                        <div><img src="assets/images/Mask Grup 6.png" class="w-75 rounded-circle"></div>
+                        <div class="w-100">
+                            <h5>Aryaa Ann<span class="text-muted ms-2" style="font-size: 12px">(Canada)</span></h5>
+                            <div class="d-flex justify-content-between">
+                                <div class="star-icons">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="text-white fs-6 ms-3">5.0</span>
+                                </div>
+                                <div class="ms-5 mt-2">
+                                    <p style="font-size: 14px">4 days ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis magna justo, scelerisque et euismod sit amet, eifend quis magna. Sed fringilla, est at volu.</p>
+                </div>
+                <div class="divider"></div>
+                <div class="comments mt-4">
+                    <div class="d-flex">
+                        <div><img src="assets/images/Mask Group 16.png" class="w-75 rounded-circle"></div>
+                        <div class="w-100">
+                            <h5>Brandon Stark<span class="text-muted ms-2" style="font-size: 12px">(Germany)</span></h5>
+                            <div class="d-flex justify-content-between">
+                                <div class="star-icons">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="text-white fs-6 ms-3">5.0</span>
+                                </div>
+                                <div class="ms-5 mt-2">
+                                    <p style="font-size: 14px">2 days ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis magna justo, scelerisque et euismod sit amet, eifend quis magna. Sed fringilla, est at volu.</p>
+                </div>
+                <div class="divider"></div>
+            </div>
+        </div>
+    </div>
+    <!------------------ FOOTER START ------------------>
+    <div class="container-fluid footer pt-3">
+        <!-- LINKS ROW -->
+        <div class="px-5 py-3">
+            <div class="row footer-links">
+                <div class="col-md-5 mb-4">
+                    <h4 class="fw-bold mb-3">Linkeble</h4>
+                    <a href="view-services.html">Categories</a>
+                    <a href="programming-service.html">Projects</a>
+                    <a href="service-request.html">Service request</a>
+                    <a href="view-all-professional-services.html">Top services</a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4 class="fw-bold mb-3">About</h4>
+                    <a href="about-us.html">About us</a>
+                    <a href="how-it-work.html">How it works?</a>
+                    <a href="privacy-policy.html">News</a>
+                    <a href="jobs.html">Jobs</a>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="fw-bold mb-3">Terms</h4>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="privacy-policy.html">Terms and Conditions</a>
+                    <a href="privacy-policy.html">Fees and Charges</a>
+                    <a href="privacy-policy.html">Copyright Policy</a>
+                </div>
+            </div>
+        </div>
+        <h4 class="text-center fw-bold">Get the Linkeble App now on:</h4>
+        <div class="text-center my-4">
+            <img src="assets/images/Group 9085.png" class="me-lg-5" width="150px">
+            <img src="assets/images/Group 9086.png" class="ms-lg-5" width="150px">
+        </div>
+        <div class="text-center w-50 mx-auto footer-social-icons">
+            <div class="d-flex justify-content-around">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-snapchat-ghost"></i></a>
+            </div>
+            <!-- bottom to top button -->
+            <!-- <div class=" text-center bottom-to-top" style="right: 4rem; bottom: 8rem;">
+                <a href="#">
+                    <img src="assets/icons/Icon ionic-ios-arrow-back.png" width="55%">
+                    <p style="margin-top: -7px!important">Top</p>
+                </a>
+            </div> -->
+        </div>
+        <div class="px-5 my-4">
+            <hr>
+        </div>
+        <!-- LAST ROW -->
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <img src="assets/images/Linkeble PNG logo.png" width="150px">
+            </div>
+            <div class="col-md-6 text-center mb-4">
+                <p>Linkeble ® is a registered Trademark of Linkeble Technology
+                    Copyright © 2021 Linkeble Technology </p>
+            </div>
+            <div class="col-md-3 d-flex justify-content-evenly align-items-center mb-4">
+                <div id="select_language" style="cursor: pointer;">
+                    <i class="fas fa-globe"></i>
+                    <span>English</span>
+                </div>
+                <div id="select_currency" style="cursor: pointer;">
+                    <i class="fas fa-dollar-sign"></i>
+                    <span>USD</span>
+                </div>
+            </div>
+        </div>
+        <!-- LANGUAGE POP UP -->
+        <div id="language_pop_up" class="position-fixed d-none" style="">
+            <div class="lang-pop-up-body" style="background-color: #000;color: #fff">
+                <div class="position-relative px-5 py-3">
+                    <h6 class="text-center my-3">Select Language</h6>
+                    <ul>
+                        <li>English<span>(English)</span><i class="fas fa-check"></i></li>
+                        <li>Lwo<span>(Acholi)</span></li>
+                        <li>Arfikaans<span>(Arfikaans)</span></li>
+                        <li>German <span>(Deutsch)</span></li>
+                        <li>French <span>(François)</span></li>
+                        <li>Spanish<span>(Español)</span></li>
+                        <li>Italian<span>(Italiano)</span></li>
+                        <li>Romanian<span>(Română)</span></li>
+                        <li>Portuguese<span>(Português)</span></li>
+                        <li>Swedish<span>(Svenska)</span></li>
+                        <li>Danish<span>(Dansk)</span></li>
+                        <li>Urdu<span>(اردو)</span></li>
+                    </ul>
+                    <button>Save</button>
+                    <i id="close_lang_popup" class="fas fa-times-circle position-absolute" style="top: 20px;right: 20px;color: gray; font-size: 22px;cursor: pointer;"></i>
+                </div>
+            </div>
+        </div>
+        <!-- CURRENCY POP UP -->
+        <div id="currency_pop_up" class="position-fixed d-none">
+            <div class="currency-pop-up-body" style="background-color: #000;color: #fff">
+                <div class="position-relative px-5 py-3">
+                    <h6 class="text-center my-3">Choose a currency</h6>
+                    <ul>
+                        <li>United States Dollar<br>USD - US$ <i class="fas fa-check"></i></li>
+                        <li>Euro<br>EUR - €</li>
+                        <li>British Pound<br>GBP - £</li>
+                        <li>Australian Dollar<br>AUD - A$</li>
+                        <li>Canadian Dollar<br>CAD - CA$</li>
+                        <li>Israeli Shekel<br>ILS - ₪</li>
+                    </ul>
+                    <button>Save</button>
+                    <i id="close_currency_popup" class="fas fa-times-circle position-absolute" style="top: 20px;right: 20px;color: gray; font-size: 22px;cursor: pointer;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------ FOOTER END ------------------>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+    const labels = [
+        '0',
+        '5',
+        '10',
+        '15',
+        '20',
+        '25',
+        '30',
+    ];
+
+    const data = {
+        labels: labels,
+        datasets: [{
+            label: 'My First dataset',
+            // backgroundColor: 'rgb(255, 255, 255)',
+            borderColor: 'rgb(0, 45, 32)',
+            // borderWidth: 1,
+            data: [0, 30, 25, 40, 20, 50, 25, 30, 30, 25, 40],
+            // data: [30, 30],
+            pointBorderColor: 'rgb(255,255,255)',
+            pointBackgroundColor: 'rgb(93,94,91)',
+            pointRadius: 8,
+            pointBorderWidth: 4,
+
+        }]
+    };
+
+
+    const config = {
+        type: 'line',
+        data: data,
+        options: {
+            plugins: {
+                legend: {
+                    display: false,
+                }
+            },
+            scales: {
+                y: {
+                    ticks: {
+                        color: 'white',
+                        callback: function(value, index, values) {
+                            return '$ ' + value;
+                        },
+                        font: {
+                            size: 20,
+                            lineHeight: 2,
+                        }
+                    },
+                    grid: {
+                        color: 'rgb(255,255,255,0.2)',
+                        tickColor: 'black',
+                    }
+                },
+            }
+        }
+    };
+    </script>
+    <script>
+    const myChart = new Chart(
+        document.getElementById('myChart'), config
+    );
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+
+</html>

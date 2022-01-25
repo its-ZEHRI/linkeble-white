@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Services | Linkeble</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- FONT AWESOME CDN -->
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script>
+    <!-- CSS LINK -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <!--------   NAVABR-START -------->
+    <div class="container px-0">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid px-0">
+                <a href="index.html">
+                    <img src="assets/images/Linkeble PNG logo.png" width="150px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-dark d-flex align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark mx-2" href="seller-dashboard.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark mx-2" href="send-offer-chat.html">Chat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark mx-2" href="manage-late-order.html">Orders</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark mx-2 active" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark mx-2" href="earning-&-overview.html">Earnings</a>
+                        </li>
+                        <!-- bell icon -->
+                        <li id="navbar_bell_pop_up" class="nav-item position-relative">
+                            <a class="nav-link text-dark mx-2 py-2" href="#"><i class="fas fa-bell"></i>
+                            </a>
+                            <div id="bell_pop_up" class="rounded px-4 py-3 position-absolute d-none">
+                                <div class="d-flex align-items-center mb-4">
+                                    <img src="assets/icons/NoPath — копия (43).png">
+                                    <a href="chat.html">
+                                        <div class="ps-3">
+                                            <h6><span>New Message </span>from Nutella</h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>2 minutes ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <img src="assets/icons/Image 589.png">
+                                    <a href="manage-late-order.html">
+                                        <div class="ps-3">
+                                            <h6>Alexa Liras <span>Placed an order</span></h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>23 hours ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <img src="assets/icons/Image 590.png">
+                                    <a href="send-offer-chat.html">
+                                        <div class="ps-3">
+                                            <h6>Laurent Perrier <span>accepted order</span></h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>5 days ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <img src="assets/icons/Image 591.png">
+                                    <a href="chat.html">
+                                        <div class="ps-3">
+                                            <h6><span>New Message from </span>Michael Levi</h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>1 week ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <img src="assets/icons/Image 591.png">
+                                    <a href="offer-revision-request.html">
+                                        <div class="ps-3">
+                                            <h6>Alexa Beck <span>Request Revision</span></h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>1 week ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/icons/Image 591.png">
+                                    <a href="offer-leave-feedback.html">
+                                        <div class="ps-3">
+                                            <h6>James Bond <span>Leave Feedback</span></h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>1 week ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- image -->
+                        <li class="nav-item position-relative" id="navbar_online_user_image">
+                            <a class="nav-link text-center  position-relative" href="#">
+                                <img src="assets/images/Subtraction 1.png" class="rounded-circle user-img" width="80%">
+                                <span class="position-absolute rounded-circle d-block online-mark"></span>
+                            </a>
+                            <div id="logged_in_user_pop_up" class="logged-in-user-pop-up  rounded position-absolute d-none">
+                                <h6 class="mx-4 text-center my-4 rounded">Balance: USD $ 133</h6>
+                                <div class="profile-indicator px-4 p-2" style="background-color: #26BC91;">
+                                    <div class="d-flex justify-content-between align-items-center text-center" style="background-color: #00966B;border-radius: 20px">
+                                        <a href="submit-services-request.html" style="">Buyer Mode</a>
+                                        <a class="active-profile" href="#">Seller Mode</a>
+                                    </div>
+                                </div>
+                                <ul class="px-4">
+                                    <li><a href="my-profile.html">My Profile</a></li>
+                                    <li><a href="seller-dashboard.html">Analytics</a></li>
+                                    <li><a href="buyer-services-request.html">Buyer Service Request</a></li>
+                                    <li><a href="account.html"> Settings</a></li>
+                                    <li><a href="accout-and-security.html"> Help/Support</a></li>
+                                    <li><a href="index.html"> Logout</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--------   NAVABR-END -------->
+    <div class="container d-flex justify-content-between">
+        <h4>My Services</h4>
+        <div class="d-flex align-items-center">
+            <span>Received Custom Offers</span>
+            <label class="switch ms-3">
+                <input type="checkbox" checked>
+                <span></span>
+            </label>
+        </div>
+    </div>
+    <hr class="m-0">
+    <div class="container ">
+        <div class="row">
+            <div class="col-md-2 pt-3 pe-0" style="border-right: 1px solid rgba(255,255,255,0.3)">
+                <a href="#" class="service-create-link text-white px-2 p-1 rounded d-inline-block"><i class="fas fa-plus me-2"></i>Create New Service</a>
+                <ul class="services-info">
+                    <li id="active_btn_of_services_info" class="active">Active<i class="fas fa-chevron-right ms-5"></i></li>
+                    <li id="pause_btn_of_services_info" class="">Pause</li>
+                    <li class="">Pending</li>
+                    <li class="">Draft</li>
+                    <li id="rejected_btn_of_services_info" class="">Rejected</li>
+                </ul>
+            </div>
+            <!-- Active section -->
+            <div id="services_active_section" class="col-md-10  pt-3 ps-4 pb-5">
+                <div class="d-lg-flex justify-content-between mb-2 ">
+                    <h4>Active Services</h4>
+                    <div class="service-options">
+                        <button><i class="far fa-edit me-2"></i>Edit</button>
+                        <button><i class="fas fa-pause me-2"></i>Pause</button>
+                        <button><i class="far fa-trash-alt me-2"></i>Delete</button>
+                        <select>
+                            <option>1 week</option>
+                            <option>2 week</option>
+                            <option>3 week</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="services-table rounded" style="overflow-x: auto;">
+                    <table class="w-100 rounded text-white ">
+                        <tr>
+                            <td> <input type="checkbox" name=""></td>
+                            <td class="text-start"><span>Services</span></td>
+                            <td><span>Impressions</span></td>
+                            <td><span>ProfileViews</span></td>
+                            <td><span>Orders</span></td>
+                            <td><span>Cancellation</span></td>
+                            <td><span>Rating</span></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/images/1Mask Group 13@2x.png">
+                                    <p class="text-start m-0 ms-3">I will Develop Professional Mobile Apps Android & iOS</p>
+                                </div>
+                            </td>
+                            <td>938</td>
+                            <td>27</td>
+                            <td>7</td>
+                            <td>0</td>
+                            <td>5.0</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/images/2Mask Group 13@2x.png">
+                                    <p class="text-start m-0 ms-3">I will Design Professional UI/UX for Apps & Web</p>
+                                </div>
+                            </td>
+                            <td>875</td>
+                            <td>21</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>5.0</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/images/5Mask Group 13@2x.png">
+                                    <p class="text-start m-0 ms-3">I will Develop Native Appsfor Android & iOS</p>
+                                </div>
+                            </td>
+                            <td>1123</td>
+                            <td>43</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>5.0</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/images/3Mask Group 13@2x.png">
+                                    <p class="text-start m-0 ms-3">I Will do Machine Learning Projects</p>
+                                </div>
+                            </td>
+                            <td>478</td>
+                            <td>8</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>4.9</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name=""></td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/images/9Mask Group 13@2x.png">
+                                    <p class="text-start m-0 ms-3">Image Processing using OpenCV Python</p>
+                                </div>
+                            </td>
+                            <td>938</td>
+                            <td>27</td>
+                            <td>7</td>
+                            <td>0</td>
+                            <td>5.0</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- pause section -->
+            <div id="services_pause_section" class="col-md-10 d-none  pt-3 ps-4 pb-5">
+                <div class="d-lg-flex justify-content-between mb-2 ">
+                    <h4>Pause Services</h4>
+                    <div class="service-options">
+                        <button><i class="far fa-edit me-2"></i>Edit</button>
+                        <button><i class="fas fa-pause me-2"></i>Resume</button>
+                        <button><i class="far fa-trash-alt me-2"></i>Delete</button>
+                        <select>
+                            <option>1 week</option>
+                            <option>2 week</option>
+                            <option>3 week</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="services-table rounded" style="overflow-x: auto;">
+                    <table class="w-100 rounded text-white">
+                        <tr>
+                            <td></td>
+                            <td class="text-start"><span>Services</span></td>
+                            <td><span>Impressions</span></td>
+                            <td><span>ProfileViews</span></td>
+                            <td><span>Orders</span></td>
+                            <td><span>Cancellation</span></td>
+                            <td><span>Rating</span></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-pause me-2"></i></td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/images/1Mask Group 13@2x.png">
+                                    <p class="text-start m-0 ms-3">I will Develop Professional Mobile Apps Android & iOS</p>
+                                </div>
+                            </td>
+                            <td>938</td>
+                            <td>27</td>
+                            <td>7</td>
+                            <td>0</td>
+                            <td>5.0</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-pause me-2"></i></td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/images/2Mask Group 13@2x.png">
+                                    <p class="text-start m-0 ms-3">I will Design Professional UI/UX for Apps & Web</p>
+                                </div>
+                            </td>
+                            <td>875</td>
+                            <td>21</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>5.0</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-pause me-2"></i></td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/images/5Mask Group 13@2x.png">
+                                    <p class="text-start m-0 ms-3">I will Develop Native Appsfor Android & iOS</p>
+                                </div>
+                            </td>
+                            <td>1123</td>
+                            <td>43</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>5.0</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-pause me-2"></i></td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/images/3Mask Group 13@2x.png">
+                                    <p class="text-start m-0 ms-3">I Will do Machine Learning Projects</p>
+                                </div>
+                            </td>
+                            <td>478</td>
+                            <td>8</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>4.9</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-pause me-2"></i></td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/images/9Mask Group 13@2x.png">
+                                    <p class="text-start m-0 ms-3">Image Processing using OpenCV Python</p>
+                                </div>
+                            </td>
+                            <td>938</td>
+                            <td>27</td>
+                            <td>7</td>
+                            <td>0</td>
+                            <td>5.0</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- rejected section -->
+            <div id="services_rejected_section" class="col-md-10 d-none pt-3 ps-4 pb-5">
+                <div class="d-lg-flex justify-content-between mb-2 ">
+                    <h4>Pause Services</h4>
+                    <div class="service-options">
+                        <button><i class="far fa-edit me-2"></i>Edit</button>
+                        <!-- <button><i class="fas fa-pause me-2"></i>Resume</button> -->
+                        <button><i class="far fa-trash-alt me-2"></i>Delete</button>
+                        <select>
+                            <option>1 week</option>
+                            <option>2 week</option>
+                            <option>3 week</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="services-table rounded" style="overflow-x: auto;">
+                    <table class="w-100 rounded text-white">
+                        <tr>
+                            <td></td>
+                            <td class="text-start"><span>Services</span></td>
+                            <td><span>Impressions</span></td>
+                            <td><span>ProfileViews</span></td>
+                            <td><span>Orders</span></td>
+                            <td><span>Cancellation</span></td>
+                            <td><span>Rating</span></td>
+                        </tr>
+                        <tr>
+                            <td><i class="far fa-times-circle"></i></td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/images/1Mask Group 13@2x.png">
+                                    <p class="text-start m-0 ms-3">I will Develop Professional Mobile Apps Android & iOS</p>
+                                </div>
+                            </td>
+                            <td>938</td>
+                            <td>27</td>
+                            <td>7</td>
+                            <td>0</td>
+                            <td>5.0</td>
+                        </tr>
+                        <tr>
+                            <td><i class="far fa-times-circle"></i></i></td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/images/2Mask Group 13@2x.png">
+                                    <p class="text-start m-0 ms-3">I will Design Professional UI/UX for Apps & Web</p>
+                                </div>
+                            </td>
+                            <td>875</td>
+                            <td>21</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>5.0</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+
+</html>

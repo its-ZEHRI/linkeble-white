@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>View All | Linkeble</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- FONT AWESOME CDN -->
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script>
+    <!-- CSS LINK -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <!--------   NAVABR-START -------->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a href="index.hmtl">
+                    <img src="assets/images/Linkeble PNG logo.png" width="150px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form method="POST" action="search-result.html" class="position-relative header-form d-flex ms-4">
+                        <input type="text" name="" placeholder="Search for any service...">
+                        <i class="fas fa-search position-absolute top-50 translate-middle" style="left: 2rem;color: #fff"></i>
+                        <input type="submit" name="" class="btn" value="Get Started">
+                    </form>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-dark d-flex align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark ms-3" href="chat.html">Chat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark ms-3" href="active-orders.html">Orders</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark ms-3" href="Favourites.html">Favourites</a>
+                        </li>
+                        <!-- bell icon -->
+                        <li id="navbar_bell_pop_up" class="nav-item position-relative">
+                            <a class="nav-link text-dark mx-2 py-2" href="#"><i class="fas fa-bell"></i>
+                            </a>
+                            <div id="bell_pop_up" class="rounded px-4 py-3 position-absolute d-none">
+                                <div class="d-flex align-items-center mb-4">
+                                    <img src="assets/icons/NoPath — копия (43).png">
+                                    <a href="chat.html">
+                                        <div class="ps-3">
+                                            <h6><span>New Message </span>from Nutella</h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>2 minutes ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <img src="assets/icons/Image 589.png">
+                                    <a href="manage-late-order.html">
+                                        <div class="ps-3">
+                                            <h6>Alexa Liras <span>Placed an order</span></h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>23 hours ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <img src="assets/icons/Image 590.png">
+                                    <a href="send-offer-chat.html">
+                                        <div class="ps-3">
+                                            <h6>Laurent Perrier <span>accepted order</span></h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>5 days ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <img src="assets/icons/Image 591.png">
+                                    <a href="chat.html">
+                                        <div class="ps-3">
+                                            <h6><span>New Message from </span>Michael Levi</h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>1 week ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <img src="assets/icons/Image 591.png">
+                                    <a href="offer-revision-request.html">
+                                        <div class="ps-3">
+                                            <h6>Alexa Beck <span>Request Revision</span></h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>1 week ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/icons/Image 591.png">
+                                    <a href="offer-leave-feedback.html">
+                                        <div class="ps-3">
+                                            <h6>James Bond <span>Leave Feedback</span></h6>
+                                            <span class="text-muted"><i class="far fa-clock me-3"></i>1 week ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- image -->
+                        <li class="nav-item position-relative" id="navbar_online_user_image">
+                            <a class="nav-link text-center  position-relative" href="#">
+                                <img src="assets/images/Subtraction 1.png" class="rounded-circle user-img" width="80%">
+                                <span class="position-absolute rounded-circle d-block online-mark"></span>
+                            </a>
+                            <div id="logged_in_user_pop_up" class="logged-in-user-pop-up  rounded position-absolute d-none">
+                                <h6 class="mx-4 text-center my-4 rounded">Balance: USD $ 133</h6>
+                                <div class="profile-indicator px-4 p-2" style="background-color: #26BC91;">
+                                    <div class="d-flex justify-content-between align-items-center text-center" style="background-color: #00966B;border-radius: 20px">
+                                        <a class="active-profile" href="#" style="">Buyer Mode</a>
+                                        <a href="seller-dashboard.html">Seller Mode</a>
+                                    </div>
+                                </div>
+                                <ul class="px-4">
+                                    <li><a href="my-profile.html">My Profile</a></li>
+                                    <li><a href="seller-dashboard.html">My Selling Dashboard</a></li>
+                                    <li><a href="service-request.html">Post Service Request</a></li>
+                                    <li><a href="post-request.html">Posted Requests</a></li>
+                                    <li><a href="account.html"> Settings</a></li>
+                                    <li><a href="account-and-security.html"> Help/Support</a></li>
+                                    <li id="select_language" style="cursor: pointer;">
+                                        <i class="fas fa-globe"></i>
+                                        <span>English</span>
+                                    </li>
+                                    <li id="select_currency" style="cursor: pointer;">
+                                        <i class="fas fa-dollar-sign"></i>
+                                        <span>USD</span>
+                                    </li>
+                                    <li><a href="index.html"> Logout</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--------   NAVABR-END -------->
+    <div class="tags container-fluid my-2">
+        <div class=" container d-flex justify-content-between py-2">
+            <a href="some-services.html"> Data Science</a>
+            <a href="some-services.html"> Programming Services</a>
+            <a href="some-services.html"> Artificial Intelligence</a>
+            <a href="some-services.html"> Blockchain</a>
+            <a href="some-services.html"> ERP</a>
+            <a href="some-services.html"> Cloud Engineering</a>
+            <a href="some-services.html"> Meta Analysis</a>
+            <a href="some-services.html"> Vibration Analysis</a>
+            <a href="some-services.html"> SCANA developer</a>
+        </div>
+    </div>
+    <div class="container">
+        <h3 class="mt-3">Machine Learning</h3>
+        <p>The Ultimate services that fits your brand personality.</p>
+        <div class="services-card py-5">
+            <div class="slider-card">
+                <a href="open-service.html">
+                    <div class="slider-card-body">
+                        <p>expert mixing and mastering engineer</p>
+                        <div class="d-flex justify-content-between px-2">
+                            <div class="star-icons">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ms-2 text-white">5 (11)</span>
+                            </div>
+                            <i class="far fa-heart heart-icon"></i>
+                        </div>
+                        <h4 class="fw-lighter mt-4 ps-2">From $10</h4>
+                        <img src="assets/images/Mask Group 13@2x.png" width="100%">
+                    </div>
+                </a>
+            </div>
+            <div class="slider-card">
+                <a href="open-service.html">
+                    <div class="slider-card-body">
+                        <p>engaging article or blog post</p>
+                        <div class="d-flex justify-content-between px-2">
+                            <div class="star-icons">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ms-2 text-white">5 (18)</span>
+                            </div>
+                            <i class="far fa-heart heart-icon"></i>
+                        </div>
+                        <h4 class="fw-lighter mt-4 ps-2">From $10</h4>
+                        <img src="assets/images/6Mask Group 13@2x.png" width="100%">
+                    </div>
+                </a>
+            </div>
+            <div class="slider-card">
+                <a href="open-service.html">
+                    <div class="slider-card-body">
+                        <p>SEO and ranking your Sites/Channel</p>
+                        <div class="d-flex justify-content-between px-2">
+                            <div class="star-icons">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ms-2 text-white">5 (19)</span>
+                            </div>
+                            <i class="far fa-heart heart-icon"></i>
+                        </div>
+                        <h4 class="fw-lighter mt-4 ps-2">From $10</h4>
+                        <img src="assets/images/7Mask Group 13@2x.png" width="100%">
+                    </div>
+                </a>
+            </div>
+            <div class="slider-card">
+                <a href="open-service.html">
+                    <div class="slider-card-body">
+                        <p>create original business poster for digital marketing</p>
+                        <div class="d-flex justify-content-between px-2">
+                            <div class="star-icons">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ms-2 text-white">5 (3)</span>
+                            </div>
+                            <i class="far fa-heart heart-icon"></i>
+                        </div>
+                        <h4 class="fw-lighter mt-4 ps-2">From $10</h4>
+                        <img src="assets/images/8Mask Group 13@2x.png" width="100%">
+                    </div>
+                </a>
+            </div>
+            <div class="slider-card">
+                <a href="open-service.html">
+                    <div class="slider-card-body">
+                        <p>trumpet section to ensure your song is a hit</p>
+                        <div class="d-flex justify-content-between px-2">
+                            <div class="star-icons">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ms-2 text-white">4.9 (9)</span>
+                            </div>
+                            <i class="far fa-heart heart-icon"></i>
+                        </div>
+                        <h4 class="fw-lighter mt-4 ps-2">From $10</h4>
+                        <img src="assets/images/14Mask Group 13.png" width="100%">
+                    </div>
+                </a>
+            </div>
+            <div class="slider-card">
+                <a href="open-service.html">
+                    <div class="slider-card-body">
+                        <p>Programming in python</p>
+                        <div class="d-flex justify-content-between px-2">
+                            <div class="star-icons">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ms-2 text-white">5 (11)</span>
+                            </div>
+                            <i class="far fa-heart heart-icon"></i>
+                        </div>
+                        <h4 class="fw-lighter mt-4 ps-2">From $10</h4>
+                        <img src="assets/images/9Mask Group 13@2x.png" width="100%">
+                    </div>
+                </a>
+            </div>
+            <div class="slider-card">
+                <a href="open-service.html">
+                    <div class="slider-card-body">
+                        <p>Proofread and Editing website</p>
+                        <div class="d-flex justify-content-between px-2">
+                            <div class="star-icons">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ms-2 text-white">5 (28)</span>
+                            </div>
+                            <i class="far fa-heart heart-icon"></i>
+                        </div>
+                        <h4 class="fw-lighter mt-4 ps-2">From $10</h4>
+                        <img src="assets/images/10Mask Group 13@2x.png" width="100%">
+                    </div>
+                </a>
+            </div>
+            <div class="slider-card">
+                <a href="open-service.html">
+                    <div class="slider-card-body">
+                        <p>Pro Logo Designing</p>
+                        <div class="d-flex justify-content-between px-2">
+                            <div class="star-icons">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ms-2 text-white">5 (9)</span>
+                            </div>
+                            <i class="far fa-heart heart-icon"></i>
+                        </div>
+                        <h4 class="fw-lighter mt-4 ps-2">From $10</h4>
+                        <img src="assets/images/11Mask Group 13@2x.png" width="100%">
+                    </div>
+                </a>
+            </div>
+            <div class="slider-card">
+                <a href="open-service.html">
+                    <div class="slider-card-body">
+                        <p>Microcontroller Programming </p>
+                        <div class="d-flex justify-content-between px-2">
+                            <div class="star-icons">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ms-2 text-white">5 (3)</span>
+                            </div>
+                            <i class="far fa-heart heart-icon"></i>
+                        </div>
+                        <h4 class="fw-lighter mt-4 ps-2">From $10</h4>
+                        <img src="assets/images/12Mask Group 13@2x.png" width="100%">
+                    </div>
+                </a>
+            </div>
+            <div class="slider-card">
+                <a href="open-service.html">
+                    <div class="slider-card-body">
+                        <p>WordPress Bug Fixer and Developer</p>
+                        <div class="d-flex justify-content-between px-2">
+                            <div class="star-icons">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="ms-2 text-white">4.9 (9)</span>
+                            </div>
+                            <i class="far fa-heart heart-icon"></i>
+                        </div>
+                        <h4 class="fw-lighter mt-4 ps-2">From $10</h4>
+                        <img src="assets/images/15Mask Group 13.png" width="100%">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- LANGUAGE POP UP -->
+    <div id="language_pop_up" class="position-fixed d-none" style="">
+        <div class="lang-pop-up-body" style="background-color: #000;color: #fff">
+            <div class="position-relative px-5 py-3">
+                <h6 class="text-center my-3">Select Language</h6>
+                <ul>
+                    <li>English<span>(English)</span><i class="fas fa-check"></i></li>
+                    <li>Lwo<span>(Acholi)</span></li>
+                    <li>Arfikaans<span>(Arfikaans)</span></li>
+                    <li>German <span>(Deutsch)</span></li>
+                    <li>French <span>(François)</span></li>
+                    <li>Spanish<span>(Español)</span></li>
+                    <li>Italian<span>(Italiano)</span></li>
+                    <li>Romanian<span>(Română)</span></li>
+                    <li>Portuguese<span>(Português)</span></li>
+                    <li>Swedish<span>(Svenska)</span></li>
+                    <li>Danish<span>(Dansk)</span></li>
+                    <li>Urdu<span>(اردو)</span></li>
+                </ul>
+                <button>Save</button>
+                <i id="close_lang_popup" class="fas fa-times-circle position-absolute" style="top: 20px;right: 20px;color: gray; font-size: 22px;cursor: pointer;"></i>
+            </div>
+        </div>
+    </div>
+    <!-- CURRENCY POP UP -->
+    <div id="currency_pop_up" class="position-fixed d-none">
+        <div class="currency-pop-up-body" style="background-color: #000;color: #fff">
+            <div class="position-relative px-5 py-3">
+                <h6 class="text-center my-3">Choose a currency</h6>
+                <ul>
+                    <li>United States Dollar<br>USD - US$ <i class="fas fa-check"></i></li>
+                    <li>Euro<br>EUR - €</li>
+                    <li>British Pound<br>GBP - £</li>
+                    <li>Australian Dollar<br>AUD - A$</li>
+                    <li>Canadian Dollar<br>CAD - CA$</li>
+                    <li>Israeli Shekel<br>ILS - ₪</li>
+                </ul>
+                <button>Save</button>
+                <i id="close_currency_popup" class="fas fa-times-circle position-absolute" style="top: 20px;right: 20px;color: gray; font-size: 22px;cursor: pointer;"></i>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+
+</html>
